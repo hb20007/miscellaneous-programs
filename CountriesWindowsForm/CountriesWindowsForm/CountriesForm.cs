@@ -13,7 +13,7 @@ namespace CountriesWindowsForm
 {
     public partial class CountriesForm : Form
     {
-        const string country1 = "Albania", country2 = "Bhutan", country3 = "Mexico";
+        const string ALBANIA_STRING = "Albania", BHUTAN_STRING = "Bhutan", MEXICO_STRING = "Mexico";
 
         public CountriesForm()
         {
