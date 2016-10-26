@@ -61,7 +61,7 @@ namespace PamperYourSolesShoeCatalog
             this.leftArrowButton = new System.Windows.Forms.Button();
             this.rightArrowButton = new System.Windows.Forms.Button();
             this.makeASelectionLabel = new System.Windows.Forms.Label();
-            this.shoeFormTooTip = new System.Windows.Forms.ToolTip(this.components);
+            this.shoeFormToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.currentIndexLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.maleGroupBox.SuspendLayout();
@@ -263,7 +263,7 @@ namespace PamperYourSolesShoeCatalog
             this.shoePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.shoePictureBox.TabIndex = 5;
             this.shoePictureBox.TabStop = false;
-            this.shoeFormTooTip.SetToolTip(this.shoePictureBox, "Catalog image");
+            this.shoeFormToolTip.SetToolTip(this.shoePictureBox, "Catalog image");
             this.shoePictureBox.Visible = false;
             // 
             // femaleGroupBox
@@ -407,7 +407,7 @@ namespace PamperYourSolesShoeCatalog
             this.currentIndexLabel.Name = "currentIndexLabel";
             this.currentIndexLabel.Size = new System.Drawing.Size(0, 15);
             this.currentIndexLabel.TabIndex = 7;
-            this.shoeFormTooTip.SetToolTip(this.currentIndexLabel, "Index of current image / number of images");
+            this.shoeFormToolTip.SetToolTip(this.currentIndexLabel, "Index of current image / number of images");
             this.currentIndexLabel.Visible = false;
             // 
             // shoeCatalogForm
@@ -474,7 +474,7 @@ namespace PamperYourSolesShoeCatalog
         private System.Windows.Forms.Label makeASelectionLabel;
         private System.Windows.Forms.RadioButton femaleStylesHiddenButton;
         private System.Windows.Forms.RadioButton maleStylesHiddenButton;
-        private System.Windows.Forms.ToolTip shoeFormTooTip;
+        private System.Windows.Forms.ToolTip shoeFormToolTip;
         private System.Windows.Forms.Label currentIndexLabel;
     }
 }
