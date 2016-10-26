@@ -19,9 +19,9 @@ namespace CountriesWindowsForm
         {
             this.InitializeComponent();
             // I could not place the following 3 lines of code within InitializeComponent() because Visual Studio would delete them every time the project is rebuilt
-            this.country1RadioButton.Text = CountriesForm.country1;
-            this.country2RadioButton.Text = CountriesForm.country2;
-            this.country3RadioButton.Text = CountriesForm.country3;
+            this.country1RadioButton.Text = CountriesForm.ALBANIA_STRING;
+            this.country2RadioButton.Text = CountriesForm.BHUTAN_STRING;
+            this.country3RadioButton.Text = CountriesForm.MEXICO_STRING;
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace CountriesWindowsForm
         private void country1RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             this.flagPictureBox.Image = Properties.Resources.Flag_of_Albania;
-            this.countryLabel.Text = "Country: " + CountriesForm.country1;
+            this.countryLabel.Text = "Country: " + CountriesForm.ALBANIA_STRING;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace CountriesWindowsForm
         private void country2RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             this.flagPictureBox.Image = Properties.Resources.Flag_of_Bhutan;
-            this.countryLabel.Text = "Country: " + CountriesForm.country2;
+            this.countryLabel.Text = "Country: " + CountriesForm.BHUTAN_STRING;
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace CountriesWindowsForm
         private void country3RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             this.flagPictureBox.Image = Properties.Resources.Flag_of_Mexico;
-            this.countryLabel.Text = "Country: " + CountriesForm.country3;
+            this.countryLabel.Text = "Country: " + CountriesForm.MEXICO_STRING;
         }
 
         /// <summary>
