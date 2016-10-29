@@ -121,6 +121,7 @@ namespace CrunchYourInvestment
             // 
             // exitButton
             // 
+            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.Name = "exitButton";
@@ -129,6 +130,7 @@ namespace CrunchYourInvestment
             // 
             // clearButton
             // 
+            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.clearButton, "clearButton");
             this.clearButton.Name = "clearButton";
             this.clearButton.UseVisualStyleBackColor = true;

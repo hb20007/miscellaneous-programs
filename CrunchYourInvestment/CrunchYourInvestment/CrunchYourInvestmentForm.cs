@@ -63,6 +63,7 @@ namespace CrunchYourInvestment
         private void actionOnAllInputsCorrect()
         {
             this.calculateButton.Enabled = true;
+            this.calculateButton.Cursor = Cursors.Hand;
             //this.AcceptButton = calculateButton; This line doesn't change anything because focus will go to the calculate button and using tab before pressing it will only change the focus to other buttons while the AcceptButton is useful when pressing enter from a text field or radio button etc
             this.calculateButton.Focus(); // This line is essential because the focus goes to the Clear button. Even if the Calculate button were next in the tab order, the focus will still go to the other button because the Calculate button was disabled the moment the event was triggered
             this.startingInvestmentTextBox.Enabled = false;
@@ -238,6 +239,7 @@ namespace CrunchYourInvestment
             this.numberOfYearsTextBox.Enabled = true;
             this.futureValueTextBox.Enabled = false;
             this.calculateButton.Enabled = false;
+            this.calculateButton.Cursor = Cursors.Arrow;
             this.startingInvestmentTextBox.Focus();
             // The 3 lines below are essential because these fields will remain true on form clear since they did not gain and lose focus for their respective _LostFocus() methods to run
             this.startingInvestmentEnteredCorrectly = false;
