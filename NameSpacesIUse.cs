@@ -2,11 +2,12 @@
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Windows.Forms; //Reference required to be added
+using System.Windows.Forms;
 using System.Drawing;
 using System.Media;
 using System.Collections.Generic;
 using System.Threading;
+using System.Globalization; // For CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol
 #endregion
 
 namespace NamespacesIUse
