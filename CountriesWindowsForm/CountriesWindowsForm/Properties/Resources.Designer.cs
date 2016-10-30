@@ -73,6 +73,16 @@ namespace CountriesWindowsForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ce1370f5_143a_4098_af09_76638ac9c636 {
+            get {
+                object obj = ResourceManager.GetObject("ce1370f5_143a_4098_af09_76638ac9c636", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Flag_of_Albania {
             get {
                 object obj = ResourceManager.GetObject("Flag_of_Albania", resourceCulture);

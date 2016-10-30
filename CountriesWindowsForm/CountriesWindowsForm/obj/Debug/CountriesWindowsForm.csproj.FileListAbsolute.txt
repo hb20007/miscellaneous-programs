@@ -7,3 +7,5 @@ C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsFo
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsForm\obj\Debug\CountriesWindowsForm.exe
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsForm\obj\Debug\CountriesWindowsForm.pdb
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsForm\obj\Debug\CountriesWindowsForm.csprojResolveAssemblyReference.cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsForm\obj\Debug\CountriesWindowsForm.CountriesSplashScreenForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\CountriesWindowsForm\CountriesWindowsForm\obj\Debug\CountriesWindowsForm.CountriesFormAboutBox.resources

@@ -7,6 +7,7 @@
 /// </file>
 
 using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CountriesWindowsForm
@@ -17,11 +18,20 @@ namespace CountriesWindowsForm
 
         public CountriesForm()
         {
+            Thread t = new Thread(new ThreadStart(splashStart));
+            t.Start();
+            Thread.Sleep(2500);
+            t.Abort();
             this.InitializeComponent();
             // I could not place the following 3 lines of code within InitializeComponent() because Visual Studio would delete them every time the project is rebuilt
             this.country1RadioButton.Text = CountriesForm.ALBANIA_STRING;
             this.country2RadioButton.Text = CountriesForm.BHUTAN_STRING;
             this.country3RadioButton.Text = CountriesForm.MEXICO_STRING;
+        }
+
+        private void splashStart()
+        {
+            Application.Run(new CountriesSplashScreenForm());
         }
 
         /// <summary>
@@ -75,6 +85,18 @@ namespace CountriesWindowsForm
         private void hideProgrammerNameCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             this.programmerLabel.Visible = !this.hideProgrammerNameCheckbox.Checked;
+        }
+
+        /// <summary>
+        /// Displays the about box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(() => Application.Run(new CountriesFormAboutBox()))); // Used the lamda expression syntax to create the thread for a change
+            thread.Name = "About Form Thread"; // Used to identify the thread in the debugger
+            thread.Start(); // A thread terminates when it no longer has code to execute. Therefore when the about box form is closed the thread will terminate and there is no need to explicitly abort it
         }
 
         /// <summary>

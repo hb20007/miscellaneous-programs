@@ -38,7 +38,6 @@ namespace CountriesWindowsForm
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountriesForm));
-            this.flagPictureBox = new System.Windows.Forms.PictureBox();
             this.country1RadioButton = new System.Windows.Forms.RadioButton();
             this.country2RadioButton = new System.Windows.Forms.RadioButton();
             this.country3RadioButton = new System.Windows.Forms.RadioButton();
@@ -50,27 +49,19 @@ namespace CountriesWindowsForm
             this.hideFormNameCheckbox = new System.Windows.Forms.CheckBox();
             this.hideProgrammerNameCheckbox = new System.Windows.Forms.CheckBox();
             this.hideCountryNameCheckbox = new System.Windows.Forms.CheckBox();
-            this.exitButton = new System.Windows.Forms.Button();
             this.horizontalDividerLabel = new System.Windows.Forms.Label();
             this.countriesFormToolTip = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.flagPictureBox)).BeginInit();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.flagPictureBox = new System.Windows.Forms.PictureBox();
+            this.countriesFormMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioButtonsFlowLayoutPanel.SuspendLayout();
             this.miscellaneousGroupBox.SuspendLayout();
             this.labelsFlowLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagPictureBox)).BeginInit();
+            this.countriesFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flagPictureBox
-            // 
-            this.flagPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.flagPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flagPictureBox.Location = new System.Drawing.Point(217, 13);
-            this.flagPictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flagPictureBox.Name = "flagPictureBox";
-            this.flagPictureBox.Size = new System.Drawing.Size(352, 210);
-            this.flagPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.flagPictureBox.TabIndex = 3;
-            this.flagPictureBox.TabStop = false;
-            this.countriesFormToolTip.SetToolTip(this.flagPictureBox, "Country flag");
             // 
             // country1RadioButton
             // 
@@ -117,7 +108,7 @@ namespace CountriesWindowsForm
             this.radioButtonsFlowLayoutPanel.Controls.Add(this.country1RadioButton);
             this.radioButtonsFlowLayoutPanel.Controls.Add(this.country2RadioButton);
             this.radioButtonsFlowLayoutPanel.Controls.Add(this.country3RadioButton);
-            this.radioButtonsFlowLayoutPanel.Location = new System.Drawing.Point(72, 79);
+            this.radioButtonsFlowLayoutPanel.Location = new System.Drawing.Point(72, 92);
             this.radioButtonsFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButtonsFlowLayoutPanel.Name = "radioButtonsFlowLayoutPanel";
             this.radioButtonsFlowLayoutPanel.Size = new System.Drawing.Size(138, 76);
@@ -130,7 +121,7 @@ namespace CountriesWindowsForm
             this.miscellaneousGroupBox.Controls.Add(this.hideFormNameCheckbox);
             this.miscellaneousGroupBox.Controls.Add(this.hideProgrammerNameCheckbox);
             this.miscellaneousGroupBox.Controls.Add(this.hideCountryNameCheckbox);
-            this.miscellaneousGroupBox.Location = new System.Drawing.Point(14, 238);
+            this.miscellaneousGroupBox.Location = new System.Drawing.Point(14, 251);
             this.miscellaneousGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.miscellaneousGroupBox.Name = "miscellaneousGroupBox";
             this.miscellaneousGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -207,6 +198,16 @@ namespace CountriesWindowsForm
             this.hideCountryNameCheckbox.UseVisualStyleBackColor = true;
             this.hideCountryNameCheckbox.CheckedChanged += new System.EventHandler(this.hideCountryNameCheckbox_CheckedChanged);
             // 
+            // horizontalDividerLabel
+            // 
+            this.horizontalDividerLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.horizontalDividerLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.horizontalDividerLabel.Location = new System.Drawing.Point(12, 240);
+            this.horizontalDividerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.horizontalDividerLabel.Name = "horizontalDividerLabel";
+            this.horizontalDividerLabel.Size = new System.Drawing.Size(560, 3);
+            this.horizontalDividerLabel.TabIndex = 0;
+            // 
             // exitButton
             // 
             this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -214,7 +215,7 @@ namespace CountriesWindowsForm
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitButton.Image = global::CountriesWindowsForm.Properties.Resources._1476468870_Log_Out;
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exitButton.Location = new System.Drawing.Point(259, 389);
+            this.exitButton.Location = new System.Drawing.Point(259, 403);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(58, 29);
@@ -224,43 +225,77 @@ namespace CountriesWindowsForm
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // horizontalDividerLabel
+            // flagPictureBox
             // 
-            this.horizontalDividerLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.horizontalDividerLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.horizontalDividerLabel.Location = new System.Drawing.Point(12, 233);
-            this.horizontalDividerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.horizontalDividerLabel.Name = "horizontalDividerLabel";
-            this.horizontalDividerLabel.Size = new System.Drawing.Size(560, 3);
-            this.horizontalDividerLabel.TabIndex = 0;
+            this.flagPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.flagPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flagPictureBox.Location = new System.Drawing.Point(217, 26);
+            this.flagPictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.flagPictureBox.Name = "flagPictureBox";
+            this.flagPictureBox.Size = new System.Drawing.Size(352, 210);
+            this.flagPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.flagPictureBox.TabIndex = 3;
+            this.flagPictureBox.TabStop = false;
+            this.countriesFormToolTip.SetToolTip(this.flagPictureBox, "Country flag");
+            // 
+            // countriesFormMenuStrip
+            // 
+            this.countriesFormMenuStrip.BackColor = System.Drawing.SystemColors.Control;
+            this.countriesFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
+            this.countriesFormMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.countriesFormMenuStrip.Name = "countriesFormMenuStrip";
+            this.countriesFormMenuStrip.Size = new System.Drawing.Size(583, 24);
+            this.countriesFormMenuStrip.TabIndex = 4;
+            this.countriesFormMenuStrip.Text = "menuStrip1";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // CountriesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.exitButton;
-            this.ClientSize = new System.Drawing.Size(583, 431);
+            this.ClientSize = new System.Drawing.Size(583, 445);
             this.Controls.Add(this.horizontalDividerLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.miscellaneousGroupBox);
             this.Controls.Add(this.radioButtonsFlowLayoutPanel);
             this.Controls.Add(this.flagPictureBox);
+            this.Controls.Add(this.countriesFormMenuStrip);
             this.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.countriesFormMenuStrip;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "CountriesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Countries";
-            ((System.ComponentModel.ISupportInitialize)(this.flagPictureBox)).EndInit();
             this.radioButtonsFlowLayoutPanel.ResumeLayout(false);
             this.radioButtonsFlowLayoutPanel.PerformLayout();
             this.miscellaneousGroupBox.ResumeLayout(false);
             this.miscellaneousGroupBox.PerformLayout();
             this.labelsFlowLayoutPanel.ResumeLayout(false);
             this.labelsFlowLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagPictureBox)).EndInit();
+            this.countriesFormMenuStrip.ResumeLayout(false);
+            this.countriesFormMenuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -281,6 +316,9 @@ namespace CountriesWindowsForm
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label horizontalDividerLabel;
         private System.Windows.Forms.ToolTip countriesFormToolTip;
+        private System.Windows.Forms.MenuStrip countriesFormMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

@@ -52,10 +52,28 @@
     <Compile Include="CountriesForm.Designer.cs">
       <DependentUpon>CountriesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CountriesFormAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountriesFormAboutBox.Designer.cs">
+      <DependentUpon>CountriesFormAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountriesSplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountriesSplashScreenForm.Designer.cs">
+      <DependentUpon>CountriesSplashScreenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CountriesForm.resx">
       <DependentUpon>CountriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountriesFormAboutBox.resx">
+      <DependentUpon>CountriesFormAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountriesSplashScreenForm.resx">
+      <DependentUpon>CountriesSplashScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +109,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1476468870_Log Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international-1751293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128546d6-5296-430c-beca-72525f5e1869.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce1370f5-143a-4098-af09-76638ac9c636.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
