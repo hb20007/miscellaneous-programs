@@ -75,11 +75,11 @@ namespace PamperYourSolesShoeCatalog
         /// <returns></returns>
         private bool aStyleIsChecked()
         {
-            foreach (RadioButton r in maleGroupBox.Controls)
-                if (r.Checked == true && r != maleStylesHiddenButton)
+            foreach (RadioButton r in this.maleGroupBox.Controls)
+                if (r.Checked == true && r != this.maleStylesHiddenButton)
                     return true;
-            foreach (RadioButton r in femaleGroupBox.Controls)
-                if (r.Checked == true && r != femaleStylesHiddenButton)
+            foreach (RadioButton r in this.femaleGroupBox.Controls)
+                if (r.Checked == true && r != this.femaleStylesHiddenButton)
                     return true;
             return false;
         }

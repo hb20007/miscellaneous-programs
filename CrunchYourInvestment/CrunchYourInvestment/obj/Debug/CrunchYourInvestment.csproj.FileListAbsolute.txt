@@ -7,6 +7,3 @@ C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestme
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.csproj.GenerateResource.Cache
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.exe
 C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\Github\Miscellaneous-Programs-3\CrunchYourInvestment\CrunchYourInvestment\bin\Debug\CrunchYourInvestment.exe.config
-C:\Users\hzsab\Desktop\HZ\Programming\Github\Miscellaneous-Programs-3\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.exe
-C:\Users\hzsab\Desktop\HZ\Programming\Github\Miscellaneous-Programs-3\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.pdb
