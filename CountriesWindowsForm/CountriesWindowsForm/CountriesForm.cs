@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CountriesWindowsForm
 {
-    public partial class CountriesForm : Form
+    partial class CountriesForm : Form
     {
-        const string ALBANIA_STRING = "Albania", BHUTAN_STRING = "Bhutan", MEXICO_STRING = "Mexico";
+        private const string ALBANIA_STRING = "Albania", BHUTAN_STRING = "Bhutan", MEXICO_STRING = "Mexico";
 
         public CountriesForm()
         {

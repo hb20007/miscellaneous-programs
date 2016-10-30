@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace PamperYourSolesShoeCatalog
 {
-    public partial class shoeCatalogForm : Form
+    partial class shoeCatalogForm : Form
     {
         /// <summary>
         /// Jagged array holding all the gallery pictures
         /// </summary>
-        Bitmap[][] shoePictures = {
+        private Bitmap[][] shoePictures = {
             // Male styles
             new Bitmap[] {Properties.Resources.maledress, Properties.Resources.maledressshoes1},
             new Bitmap[] {Properties.Resources.maleworkboots, Properties.Resources.maleworkboots2, Properties.Resources.maleworkboots3},
@@ -35,29 +35,29 @@ namespace PamperYourSolesShoeCatalog
         /// <summary>
         /// Index of current subarray of the jagged array
         /// </summary>
-        int indexOfCurrentArray { get; set; }
+        private int indexOfCurrentArray;
 
         /// <summary>
         /// Size of the current subarray of the jagged array
         /// </summary>
-        int sizeOfCurrentArray { get; set; }
+        private int sizeOfCurrentArray;
 
         /// <summary>
         /// Image currently displayed in the picture box
         /// </summary>
-        Bitmap currentImage { get; set; }
+        private Bitmap currentImage;
 
         /// <summary>
         /// Index of picture (in the jagged array) which is currently displayed in the picture box
         /// </summary>
-        int indexOfCurrentImage { get; set; } 
+        private int indexOfCurrentImage;
 
         public shoeCatalogForm()
         {
             this.InitializeComponent();
         }
 
-        // I NO LONGER USE THE METHOD BELOW BECAUSE OF THE INTRODUCTION OF THE PROPERTY indexOfCurrentArray
+        // I NO LONGER USE THE METHOD BELOW BECAUSE OF THE INTRODUCTION OF THE FIELD indexOfCurrentArray
         //RadioButton whichStyleIsChecked()
         //{
         //    foreach (RadioButton r in maleGroupBox.Controls)
@@ -73,7 +73,7 @@ namespace PamperYourSolesShoeCatalog
         /// Returns true if the user has selected a male or female style, else false
         /// </summary>
         /// <returns></returns>
-        bool aStyleIsChecked()
+        private bool aStyleIsChecked()
         {
             foreach (RadioButton r in maleGroupBox.Controls)
                 if (r.Checked == true && r != maleStylesHiddenButton)
@@ -377,7 +377,7 @@ namespace PamperYourSolesShoeCatalog
         {
             if (aStyleIsChecked())
             {
-                // int indexOfCurrentImage = Array.IndexOf(this.shoePictures[this.indexOfCurrentArray], this.currentImage); // I NO LONGER NEED THIS LINE BECAUSE OF THE INTRODUCTION OF THE PROPERTY indexOfCurrentImage
+                // int indexOfCurrentImage = Array.IndexOf(this.shoePictures[this.indexOfCurrentArray], this.currentImage); // I NO LONGER NEED THIS LINE BECAUSE OF THE INTRODUCTION OF THE FIELD indexOfCurrentImage
                 this.indexOfCurrentImage = Utilities.previousIndex(this.indexOfCurrentImage, this.sizeOfCurrentArray);
                 this.currentImage = shoePictures[this.indexOfCurrentArray][this.indexOfCurrentImage];
                 this.shoePictureBox.Image = this.currentImage;
@@ -434,7 +434,7 @@ namespace PamperYourSolesShoeCatalog
         {
             if (aStyleIsChecked())
             {
-                //int indexOfCurrentImage = Array.IndexOf(this.shoePictures[this.indexOfCurrentArray], this.currentImage); // I NO LONGER NEED THIS LINE BECAUSE OF THE INTRODUCTION OF THE PROPERTY indexOfCurrentImage
+                //int indexOfCurrentImage = Array.IndexOf(this.shoePictures[this.indexOfCurrentArray], this.currentImage); // I NO LONGER NEED THIS LINE BECAUSE OF THE INTRODUCTION OF THE FIELD indexOfCurrentImage
                 this.indexOfCurrentImage = Utilities.nextIndex(this.indexOfCurrentImage, this.sizeOfCurrentArray);
                 this.currentImage = this.shoePictures[this.indexOfCurrentArray][this.indexOfCurrentImage];
                 this.shoePictureBox.Image = this.currentImage;

@@ -12,27 +12,27 @@ using System.Globalization;
 
 namespace CrunchYourInvestment
 {
-    public partial class CrunchYourInvestmentForm : Form
+    partial class CrunchYourInvestmentForm : Form
     {
         /// <summary>
         /// Used to store the starting investment. It is necessary because the starting investment will be formatted to a currency and then it will be parsed again to a decimal to use it for the calculation. However, formatting to a currency does not allow the string to be parsed as a decimal.
         /// </summary>
-        decimal startingInvestment { get; set; } // Initialized to 0 (C# default constructor)
+        private decimal startingInvestment; // Initialized to 0 (C# default constructor)
 
         /// <summary>
         /// Becomes true if the value in the starting investment text box is correctly inserted
         /// </summary>
-        bool startingInvestmentEnteredCorrectly { get; set; } // Initialized to false (C# default constructor)
+        private bool startingInvestmentEnteredCorrectly; // Initialized to false (C# default constructor)
 
         /// <summary>
         /// Becomes true if the value in the interest rate text box is correctly inserted
         /// </summary>
-        bool interestRateEnteredCorrectly { get; set; } // Initialized to false (C# default constructor)
+        private bool interestRateEnteredCorrectly; // Initialized to false (C# default constructor)
 
         /// <summary>
         /// Becomes true if the value in the number of years text box is correctly inserted
         /// </summary>
-        bool numberOfYearsEnteredCorrectly { get; set; } // Initialized to false (C# default constructor)
+        private bool numberOfYearsEnteredCorrectly; // Initialized to false (C# default constructor)
   
         public CrunchYourInvestmentForm()
         {
