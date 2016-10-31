@@ -249,6 +249,7 @@ namespace RifleBeautySalon
             // clearButton
             // 
             this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.clearButton.Location = new System.Drawing.Point(47, 318);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
@@ -282,8 +283,10 @@ namespace RifleBeautySalon
             // 
             // RifleBeautySalonForm
             // 
+            this.AcceptButton = this.calculateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.clearButton;
             this.ClientSize = new System.Drawing.Size(425, 349);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.calculateButton);
