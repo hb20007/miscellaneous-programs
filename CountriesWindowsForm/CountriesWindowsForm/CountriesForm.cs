@@ -29,6 +29,9 @@ namespace CountriesWindowsForm
             this.country3RadioButton.Text = CountriesForm.MEXICO_STRING;
         }
 
+        /// <summary>
+        /// Launches the splash screen
+        /// </summary>
         private void splashStart()
         {
             Application.Run(new CountriesSplashScreenForm());
