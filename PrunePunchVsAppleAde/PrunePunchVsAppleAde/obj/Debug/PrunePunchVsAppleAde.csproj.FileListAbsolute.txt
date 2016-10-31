@@ -1,0 +1,12 @@
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\bin\Debug\PrunePunchVsAppleAde.exe.config
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\bin\Debug\PrunePunchVsAppleAde.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\bin\Debug\PrunePunchVsAppleAde.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.csprojResolveAssemblyReference.cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.Properties.Resources.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.csproj.GenerateResource.Cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.PpVsAaMainForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.PpVsAaAboutBox.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.PpVsAaSplashScreen.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\PrunePunchVsAppleAde\PrunePunchVsAppleAde\obj\Debug\PrunePunchVsAppleAde.PpVsAaSummaryForm.resources
