@@ -70,9 +70,9 @@ namespace PamperYourSolesShoeCatalog
         //}
 
         /// <summary>
-        /// Returns true if the user has selected a male or female style, else false
+        /// Checks if a style is checked
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns <code>true</code> if the user has selected a male or female style, else <code>false</code></returns>
         private bool aStyleIsChecked()
         {
             foreach (RadioButton r in this.maleGroupBox.Controls)
