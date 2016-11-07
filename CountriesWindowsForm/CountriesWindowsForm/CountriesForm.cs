@@ -18,10 +18,10 @@ namespace CountriesWindowsForm
 
         public CountriesForm()
         {
-            Thread t = new Thread(new ThreadStart(splashStart));
-            t.Start();
+            Thread splashScreenThread = new Thread(new ThreadStart(splashStart));
+            splashScreenThread.Start();
             Thread.Sleep(2500);
-            t.Abort();
+            splashScreenThread.Abort();
             this.InitializeComponent();
             // I could not place the following 3 lines of code within InitializeComponent() because Visual Studio would delete them every time the project is rebuilt
             this.country1RadioButton.Text = CountriesForm.ALBANIA_STRING;
@@ -97,9 +97,9 @@ namespace CountriesWindowsForm
         /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(() => Application.Run(new CountriesFormAboutBox()))); // Used the lamda expression syntax to create the thread for a change
-            thread.Name = "About Form Thread"; // Used to identify the thread in the debugger
-            thread.Start(); // A thread terminates when it no longer has code to execute. Therefore when the about box form is closed the thread will terminate and there is no need to explicitly abort it
+            Thread aboutBoxThread = new Thread(new ThreadStart(() => Application.Run(new CountriesFormAboutBox()))); // Used the lamda expression syntax to create the aboutBoxThread for a change
+            aboutBoxThread.Name = "About Form Thread"; // Used to identify the aboutBoxThread in the debugger
+            aboutBoxThread.Start(); // A thread terminates when it no longer has code to execute. Therefore when the about box form is closed the aboutBoxThread will terminate and there is no need to explicitly abort it
         }
 
         /// <summary>
