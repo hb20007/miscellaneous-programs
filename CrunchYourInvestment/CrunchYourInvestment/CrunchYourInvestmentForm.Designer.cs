@@ -61,6 +61,8 @@ namespace CrunchYourInvestment
             // 
             // startingInvestmentTextBox
             // 
+            this.startingInvestmentTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.startingInvestmentTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource; // Autocomplete is implemented with an empty CustomSource because implementing it allows using CTRL+BACKSPACE to delete the text in the text box which otherwise doesn't work
             resources.ApplyResources(this.startingInvestmentTextBox, "startingInvestmentTextBox");
             this.startingInvestmentTextBox.Name = "startingInvestmentTextBox";
             this.crunchYourInvestmentToolTip.SetToolTip(this.startingInvestmentTextBox, resources.GetString("startingInvestmentTextBox.ToolTip"));
@@ -68,6 +70,8 @@ namespace CrunchYourInvestment
             // 
             // interestRateTextBox
             // 
+            this.interestRateTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.interestRateTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.interestRateTextBox, "interestRateTextBox");
             this.interestRateTextBox.Name = "interestRateTextBox";
             this.crunchYourInvestmentToolTip.SetToolTip(this.interestRateTextBox, resources.GetString("interestRateTextBox.ToolTip"));
@@ -81,6 +85,8 @@ namespace CrunchYourInvestment
             // 
             // numberOfYearsTextBox
             // 
+            this.numberOfYearsTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.numberOfYearsTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.numberOfYearsTextBox, "numberOfYearsTextBox");
             this.numberOfYearsTextBox.Name = "numberOfYearsTextBox";
             this.crunchYourInvestmentToolTip.SetToolTip(this.numberOfYearsTextBox, resources.GetString("numberOfYearsTextBox.ToolTip"));
