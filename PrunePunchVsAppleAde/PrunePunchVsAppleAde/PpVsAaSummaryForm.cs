@@ -18,6 +18,11 @@ namespace PrunePunchVsAppleAde
         /// The parent form
         /// </summary>
         private PpVsAaMainForm parent;
+
+        /// <summary>
+        /// PpVsAaSummaryForm constructor which also takes the parent form as a parameter and saves it in a field
+        /// </summary>
+        /// <param name="parentForm">The parent form</param>
         public PpVsAaSummaryForm(PpVsAaMainForm parentForm) // An alternative to passing the parent form as an argument would have been to use the MdiParent and ParentForm properties
         {
             this.InitializeComponent();
