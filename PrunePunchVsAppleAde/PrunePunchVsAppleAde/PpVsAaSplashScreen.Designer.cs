@@ -51,17 +51,18 @@ namespace PrunePunchVsAppleAde
             this.splashScreenTitleLabel.TabIndex = 0;
             this.splashScreenTitleLabel.Text = "Prune Punch™ vs Apple Ade™";
             // 
-            // PpVsAaSpashScreen
+            // PpVsAaSplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PrunePunchVsAppleAde.Properties.Resources.db19fe86_7f59_46fc_a13b_1778c591c8a0; // Image used is in the public domain
+            this.BackgroundImage = global::PrunePunchVsAppleAde.Properties.Resources.db19fe86_7f59_46fc_a13b_1778c591c8a0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(275, 178);
             this.Controls.Add(this.splashScreenTitleLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PpVsAaSpashScreen";
+            this.Name = "PpVsAaSplashScreen";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PpVsAaSpashScreen";
             this.ResumeLayout(false);
