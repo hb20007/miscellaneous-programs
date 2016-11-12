@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Globalization; // For CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol
 using System.Reflection; // For accessing project assembly info
+using System.Linq; // For Controls.OfType<>()
 #endregion
 
 namespace NamespacesIUse
