@@ -78,7 +78,7 @@ namespace CrunchYourInvestment
         /// <param name="e"></param>
         private void startingInvestmentTextBox_LostFocus(object sender, EventArgs e)
         {
-            if (!this.startingInvestmentTextBox.Text.Equals("")) // The user may choose to leave the field empty for now
+            if (!this.startingInvestmentTextBox.Text.Equals("")) // The user may choose to leave the field empty for now. However, if the user types only a space, it will be treated as incorrect input as opposed to no input
             {
                 string currencySymbol = CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol; // Retrieves appropriate currency symbol
                 string errorMessage = ""; // Will be given a value depending on the error and will be printed in a MessageBox
@@ -89,7 +89,7 @@ namespace CrunchYourInvestment
                     if (this.startingInvestmentTextBox.Text.StartsWith(currencySymbol)) // If the value has a currency symbol it is removed in order for parsing to proceed
                     {
                         string startingInvestmentWithoutCurrencySign = this.startingInvestmentTextBox.Text.Substring(1); // A substring from the 2nd character onwards
-                        this.startingInvestment = decimal.Parse(startingInvestmentWithoutCurrencySign);
+                        this.startingInvestment = decimal.Parse(startingInvestmentWithoutCurrencySign); // The parse method takes care of removing leading and trailing whitespace
                     }
                     else
                         this.startingInvestment = decimal.Parse(this.startingInvestmentTextBox.Text);
