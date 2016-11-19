@@ -34,7 +34,7 @@ namespace PrunePunchVsAppleAde
         public PpVsAaMainForm()
         {
             this.numberOfRatings = 0;
-            Thread splashScreenThread = new Thread(new ThreadStart(splashStart));
+            Thread splashScreenThread = new Thread(new ThreadStart(this.splashStart));
             splashScreenThread.Start();
             Thread.Sleep(2000);
             splashScreenThread.Abort();
@@ -167,7 +167,7 @@ namespace PrunePunchVsAppleAde
         /// <param name="e"></param>
         private void summaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread summaryFormThread = new Thread(new ThreadStart(summaryStart));
+            Thread summaryFormThread = new Thread(new ThreadStart(this.summaryStart));
             summaryFormThread.Start();
         }
 
@@ -178,7 +178,7 @@ namespace PrunePunchVsAppleAde
         /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread aboutBoxThread = new Thread(new ThreadStart(aboutStart));
+            Thread aboutBoxThread = new Thread(new ThreadStart(this.aboutStart));
             aboutBoxThread.Start();
         }
     }

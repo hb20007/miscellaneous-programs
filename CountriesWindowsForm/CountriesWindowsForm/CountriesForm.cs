@@ -18,7 +18,7 @@ namespace CountriesWindowsForm
 
         public CountriesForm()
         {
-            Thread splashScreenThread = new Thread(new ThreadStart(splashStart));
+            Thread splashScreenThread = new Thread(new ThreadStart(this.splashStart));
             splashScreenThread.Start();
             Thread.Sleep(2500);
             splashScreenThread.Abort();
