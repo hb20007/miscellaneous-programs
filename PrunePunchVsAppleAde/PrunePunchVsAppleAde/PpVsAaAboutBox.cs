@@ -17,12 +17,12 @@ namespace PrunePunchVsAppleAde
         public PpVsAaAboutBox()
         {
             this.InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
-            this.productNameLabel.Text = AssemblyProduct;
-            this.versionLabel.Text = String.Format("Version {0}", AssemblyVersion);
-            this.copyrightLabel.Text = AssemblyCopyright;
-            this.companyNameLabel.Text = AssemblyCompany;
-            this.descriptionTextBox.Text = AssemblyDescription;
+            this.Text = String.Format("About {0}", this.AssemblyTitle);
+            this.productNameLabel.Text = this.AssemblyProduct;
+            this.versionLabel.Text = String.Format("Version {0}", this.AssemblyVersion);
+            this.copyrightLabel.Text = this.AssemblyCopyright;
+            this.companyNameLabel.Text = this.AssemblyCompany;
+            this.descriptionTextBox.Text = this.AssemblyDescription;
         }
 
         #region Assembly Attribute Accessors
