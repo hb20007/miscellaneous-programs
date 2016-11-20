@@ -1,0 +1,12 @@
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\bin\Debug\StudentData.exe.config
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\bin\Debug\StudentData.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\bin\Debug\StudentData.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.csprojResolveAssemblyReference.cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.Properties.Resources.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.csproj.GenerateResource.Cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.StudentDataMainForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.StudentDataAboutBox.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.AddUniversityForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\StudentData\StudentData\obj\Debug\StudentData.AllStudentsForm.resources
