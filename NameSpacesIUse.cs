@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Media;
 using System.Collections.Generic;
 using System.Threading;
-using System.Globalization; // For CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol
+using System.Globalization; // For CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol and CultureInfo.CurrentCulture.TextInfo.ToTitleCase() etc.
 using System.Reflection; // For accessing project assembly info
 using System.Windows.Forms;
 using System.Linq; // For Controls.OfType<>()
