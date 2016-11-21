@@ -1,2 +1,2 @@
-# Miscellaneous-Programs-3
-Random C# programs
+# Miscellaneous-C-Sharp-Programs
+Random C# programs by me
