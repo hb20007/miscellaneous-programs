@@ -186,6 +186,7 @@ namespace StudentData
             // freshmanRadioButton
             // 
             this.freshmanRadioButton.AutoSize = true;
+            this.freshmanRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.freshmanRadioButton.Location = new System.Drawing.Point(142, 17);
             this.freshmanRadioButton.Name = "freshmanRadioButton";
             this.freshmanRadioButton.Size = new System.Drawing.Size(81, 19);
@@ -197,6 +198,7 @@ namespace StudentData
             // sophomoreRadioButton
             // 
             this.sophomoreRadioButton.AutoSize = true;
+            this.sophomoreRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sophomoreRadioButton.Location = new System.Drawing.Point(142, 39);
             this.sophomoreRadioButton.Name = "sophomoreRadioButton";
             this.sophomoreRadioButton.Size = new System.Drawing.Size(90, 19);
@@ -208,6 +210,7 @@ namespace StudentData
             // juniorRadioButton
             // 
             this.juniorRadioButton.AutoSize = true;
+            this.juniorRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.juniorRadioButton.Location = new System.Drawing.Point(142, 61);
             this.juniorRadioButton.Name = "juniorRadioButton";
             this.juniorRadioButton.Size = new System.Drawing.Size(59, 19);
@@ -219,6 +222,7 @@ namespace StudentData
             // seniorRadioButton
             // 
             this.seniorRadioButton.AutoSize = true;
+            this.seniorRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.seniorRadioButton.Location = new System.Drawing.Point(142, 83);
             this.seniorRadioButton.Name = "seniorRadioButton";
             this.seniorRadioButton.Size = new System.Drawing.Size(61, 19);
@@ -280,6 +284,7 @@ namespace StudentData
             // deansListCheckBox
             // 
             this.deansListCheckBox.AutoSize = true;
+            this.deansListCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deansListCheckBox.Location = new System.Drawing.Point(382, 205);
             this.deansListCheckBox.Name = "deansListCheckBox";
             this.deansListCheckBox.Size = new System.Drawing.Size(83, 19);
