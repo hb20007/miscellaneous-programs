@@ -15,11 +15,16 @@ namespace RegisterCustomerWebsite
 {
     partial class WelcomePage : Page
     {
+        /// <summary>
+        /// Loads and displays the username in the welcome message
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                string name = Session["name"].ToString();
+                string name = Session["Name"].ToString();
                 this.welcomeMessageLabel.Font.Name = "Courier New";
                 this.welcomeMessageLabel.Text = "Welcome " + name + '!';
             }

@@ -15,15 +15,14 @@ namespace RegisterCustomerWebsite
 {
     partial class RegistrationForm : Page
     {
-
         /// <summary>
-        /// Displays welcome message
+        /// Takes the user to the page with the welcome message
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         protected void submitButton_Click(object sender, EventArgs e)
         {
-            Session.Add("name", nameTextBox.Text);
+            Session.Add("Name", nameTextBox.Text);
             Server.Transfer("WelcomePage.aspx");
         }
     }
