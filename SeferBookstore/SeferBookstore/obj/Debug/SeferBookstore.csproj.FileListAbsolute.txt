@@ -1,0 +1,14 @@
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\bin\Debug\SeferBookstore.exe.config
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\bin\Debug\SeferBookstore.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\bin\Debug\SeferBookstore.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.csprojResolveAssemblyReference.cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.Properties.Resources.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.SeferBookstoreAboutBox.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.SeferBookStoreSplashScreen.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.csproj.GenerateResource.Cache
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.exe
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.pdb
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.SeferBookstoreMainForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.seferBookstoreSummaryForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.seferBookstoreAdvancedSearchForm.resources
+C:\Users\hzsab\Desktop\HZ\Programming\C#\SeferBookstore\SeferBookstore\obj\Debug\SeferBookstore.SeferBookstoreCheckoutForm.resources
