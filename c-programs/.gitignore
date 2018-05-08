@@ -1,0 +1,6 @@
+#
+# .gitignore for miscellaneous-programs/c-programs
+#
+
+*.o
+*.exe

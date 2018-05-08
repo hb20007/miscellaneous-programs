@@ -1,0 +1,8 @@
+#
+# .gitattributes for miscellaneous-programs/c-programs
+#
+# Added because Linguist was misclassifying C as C++
+#
+
+$ c-programs .gitattributes
+*.h linguist-language=C
