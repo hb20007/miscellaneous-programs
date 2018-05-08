@@ -1,0 +1,6 @@
+#
+# .gitattributes for miscellaneous-programs/java-programs
+#
+
+$ java-programs .gitattributes
+AirportHandlingSystem/doc/* linguist-documentation
