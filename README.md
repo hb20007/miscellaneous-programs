@@ -4,7 +4,7 @@
 A collection of small programs &mdash; games, simulations, math stuff etc.
 
 ## Contents
-### 1. [`c-programs`](https://github.com/hb20007/miscellaneous-programs/c-programs)
+### 1. [`c-programs`](https://github.com/hb20007/miscellaneous-programs/tree/master/c-programs)
 - [Caesar cipher implementation in C](https://github.com/hb20007/miscellaneous-programs/tree/master/c-programs/CaesarCipher)
 - [Password strength checker](https://github.com/hb20007/miscellaneous-programs/tree/master/c-programs/PasswordChecker)
 
@@ -21,7 +21,7 @@ A collection of small programs &mdash; games, simulations, math stuff etc.
     - [Mastermind](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Games/Mastermind.cpp)
     - [Sudoku](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Games/Sudoku.cpp)
 - [Mathematical](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical)
-    - [Approximating \(\pi\)](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical/ApproximatingPi)
+    - [Approximating &#960;](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical/ApproximatingPi)
     - [Game of life](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical/GameOfLife)
     - [Magic squares](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical/MagicSquares)
     - [Sieve of Eratosthenes](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Mathematical/SieveOfEratosthenes.cpp)
