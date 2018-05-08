@@ -9,7 +9,7 @@ A collection of small programs &mdash; games, simulations, math stuff etc.
 - [Password strength checker](https://github.com/hb20007/miscellaneous-programs/tree/master/c-programs/PasswordChecker)
 
 ### 2. [`csharp-programs`](https://github.com/hb20007/miscellaneous-programs/tree/master/csharp-programs)
-Visual Studio projects with Windows Forms...
+- [Visual Studio projects with Windows Forms...](https://github.com/hb20007/miscellaneous-programs/tree/master/csharp-programs)
 
 ### 3. [`cpp-programs`](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs)
 - [Algorithms](https://github.com/hb20007/miscellaneous-programs/tree/master/cpp-programs/Algorithms)
