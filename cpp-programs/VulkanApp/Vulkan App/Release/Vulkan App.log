@@ -1,0 +1,9 @@
+﻿  main.cpp
+main.cpp(398): warning C4018: '<': signed/unsigned mismatch
+main.cpp(613): warning C4838: conversion from 'int' to 'uint32_t' requires a narrowing conversion
+  Generating code
+  0 of 2845 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Vulkan App.vcxproj -> C:\Users\hzsab\Desktop\HZ\Programming\C++\Vulkan App\Release\Vulkan App.exe
