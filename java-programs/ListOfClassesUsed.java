@@ -1,7 +1,5 @@
-package yo;
-
 import java.math.BigInteger;
-import java.math.BigDecimal
+import java.math.BigDecimal;
 
 import java.util.Scanner;
 import java.util.Calendar; 
@@ -10,7 +8,7 @@ import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Timer;
-import java.util.Locale;//for geo data
+import java.util.Locale; // For geo data
 import java.util.Formatter;
 import java.util.Stack;
 import java.util.Queue;

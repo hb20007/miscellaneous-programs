@@ -22,8 +22,7 @@
 #include <ctype.h> // For isupper(), tolower() etc.
 #include <stdbool.h> // For the macros bool, true and false
 
-int mod (const int a, const int b)
-{
+int mod(const int a, const int b) {
    if (b < 0) // b is usually not negative but just in case it is.
      return mod(a, -b);   
    int ret = a % b;
@@ -86,7 +85,6 @@ void encryptDecrypt(const char* mode, const char* shiftAmt, const char* message)
 	}	
 	
 	/* The algorithm begins here */
-	
 	if (!strcmp(mode, "-d"))
 		key -= 2 * key;
 	shiftAndPrint(key, message);

@@ -34,5 +34,4 @@ A collection of small programs &mdash; games, simulations, math stuff etc.
 ### 4. [`java-programs`](https://github.com/hb20007/miscellaneous-programs/tree/master/java-programs)
 - [Airport handling system](https://github.com/hb20007/miscellaneous-programs/tree/master/java-programs/AirportHandlingSystem)
 - [Concurrency demos](https://github.com/hb20007/miscellaneous-programs/tree/master/java-programs/Concurrency)
-- [Tic-tac-toe](https://github.com/hb20007/miscellaneous-programs/tree/master/java-programs/TicTacToe)
 - [The 2 functions challenge](https://github.com/hb20007/miscellaneous-programs/tree/master/java-programs/TwoFunctionsChallenge.java)

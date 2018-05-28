@@ -53,9 +53,7 @@ enum {DIGITS,
 	  ALNUM,
 	  SINGLE_CASE_NUMBERS_SYMBOLS,
 	  DOUBLE_CASE_AND_SYMBOLS,
-	  ALL
-	  };
-	  
+	  ALL};
 	  
 /* FUNCTIONS */
 	  
