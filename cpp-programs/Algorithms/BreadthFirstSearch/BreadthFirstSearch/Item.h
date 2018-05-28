@@ -2,7 +2,7 @@
 * Item.h
 * The Item class defining the attributes of an item
 *
-* @author Hanna Sababa
+* @author hb20007
 * @version 1.0 04/12/2016
 */
 

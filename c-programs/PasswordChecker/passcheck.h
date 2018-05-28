@@ -1,6 +1,6 @@
 /**
 * @file passcheck.h
-* @author Hanna Sababa
+* @author hb20007
 * @date 05/03/2017
 * @brief Header file for passcheck.c
 */

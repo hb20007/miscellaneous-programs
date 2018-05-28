@@ -1,10 +1,6 @@
 /*
-* COMP-358 Networks and Data Communication
-* Instructor: Dr Constandinos Mavromoustakis
-*
-* Final Project - Simulating a Routing Table (Topic 3)
-*
-* @HANNA SABABA (U144N0959)
+* Simulating a Routing Table
+* @hb20007
 */
 
 #include "Simulation.h"

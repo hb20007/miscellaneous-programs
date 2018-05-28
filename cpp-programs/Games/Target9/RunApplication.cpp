@@ -1,8 +1,6 @@
-/* COMP-211 Data Structures
-*  Assignment 2 - Target 9 Game
-*
-*  @Hanna Sababa
-*  @U144N0959
+/*
+*  Target 9 Game
+*  @hb20007
 */
 
 #include <iostream>

@@ -1,10 +1,6 @@
 /*
-* COMP-212 
-* Instructor: Dr Constandinos Mavromoustakis
-*
-* Final Project - Creating an Airport Handling System GUI
-*
-* @HANNA SABABA (U144N0959)
+* Airport Handling System GUI
+* @hb20007
 */
 
 public class AirTrafficController { //A class for the Air Traffic Controllers who would use the application I have created

@@ -1,6 +1,6 @@
 /**
 * @file passcheck.c
-* @author Hanna Sababa
+* @author hb20007
 * @date 05/03/2017
 * @brief Checks the strength of the given password
 */

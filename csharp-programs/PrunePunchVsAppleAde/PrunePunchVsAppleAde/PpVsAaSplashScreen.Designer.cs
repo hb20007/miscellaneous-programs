@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-10-31</datecreated>
 /// <summary>
 /// Part of the PpVsAaSpashScreen class with the auto-generated stuff

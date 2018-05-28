@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-10-29</datecreated>
 /// <summary>
 /// Contains part of the class CrunchYourInvestmentForm dealing with the user interface

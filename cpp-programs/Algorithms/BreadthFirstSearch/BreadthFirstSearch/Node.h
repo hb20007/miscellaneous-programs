@@ -2,7 +2,7 @@
 * Node.h
 * The Node data structure class 
 *
-* @author Hanna Sababa
+* @author hb20007
 * @version 1.0 04/12/2016
 */
 

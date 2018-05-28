@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-11-24</datecreated>
 /// <summary>
 ///  Contains the part of the class RegistrationForm with all code not automatically generated

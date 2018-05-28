@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Student Data")]
 [assembly: AssemblyDescription("A database of students where you can add records for new students and view all records")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hanna Sababa Inc.")]
+[assembly: AssemblyCompany("Hb20007")]
 [assembly: AssemblyProduct("Student Data")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

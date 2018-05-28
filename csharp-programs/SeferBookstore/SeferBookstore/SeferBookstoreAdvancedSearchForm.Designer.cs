@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-12-23</datecreated>
 /// <summary>
 /// Contains the part of the class SeferBookstoreAdvancedSearchForm with the Windows Form Designer code

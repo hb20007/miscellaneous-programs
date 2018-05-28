@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-10-30</datecreated>
 /// <summary>
 ///  Contains the part of the class CountriesFormAboutBox dealing with class members which are not controls and the methods acting on the controls

@@ -2,7 +2,7 @@
 * Robot.h
 * The Robot class defining the attributes and behavior of a robot
 *
-* @author Hanna Sababa
+* @author hb20007
 * @version 1.0 04/12/2016
 */
 

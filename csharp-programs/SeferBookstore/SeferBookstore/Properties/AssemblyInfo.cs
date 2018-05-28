@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Sefer Bookstore")]
 [assembly: AssemblyDescription("The official application of Cyprus' leading bookstore, with a vast range of books from academic, popular and professional publishers.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hanna Sababa Ltd")]
+[assembly: AssemblyCompany("Hb20007")]
 [assembly: AssemblyProduct("Sefer Bookstore")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

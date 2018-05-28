@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-12-23</datecreated>
 /// <summary>
 /// Countains the part of the class SeferBookstoreCheckoutForm with my code

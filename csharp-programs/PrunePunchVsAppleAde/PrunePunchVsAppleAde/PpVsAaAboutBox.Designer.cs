@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-10-30</datecreated>
 /// <summary>
 ///  Contains the part of the class PpVsAaAboutBox dealing with the visual elements of the form

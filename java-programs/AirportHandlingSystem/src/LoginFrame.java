@@ -1,10 +1,6 @@
 /*
-* COMP-212 
-* Instructor: Dr Constandinos Mavromoustakis
-*
-* Final Project - Creating an Airport Handling System GUI
-*
-* @HANNA SABABA (U144N0959)
+* Airport Handling System GUI
+* @hb20007
 */
 
 import java.awt.EventQueue; //Allows addition of tasks to the Event Queue using invokeLater()

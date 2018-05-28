@@ -1,5 +1,5 @@
 ﻿/// <file>
-/// <author>Hanna Sababa</author>
+/// <author>hb20007</author>
 /// <datecreated>2016-11-07</datecreated>
 /// <summary>
 /// Countains the part of the class SeferBookstoreSplashScreen with the visual aspects of the form

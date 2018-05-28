@@ -2,7 +2,7 @@
 * Utilities.h
 * The Utilities class contains generic static methods useful in the program
 *
-* @author Hanna Sababa
+* @author hb20007
 * @version 1.0 03/12/2016
 */
 
