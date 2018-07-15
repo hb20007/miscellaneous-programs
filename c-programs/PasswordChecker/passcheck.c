@@ -60,7 +60,7 @@ char* deduceCharsetSizeAndAdvice(const int passLength, const int passType, int* 
 				*charsetSizePtr = SINGLE_CASE_CHARSET_SIZE;
 				return "Try varying the case of letters, and including numbers and symbols";
 			case DOUBLE_CASE_ALPHA:
-				*charsetSizePtr = 2*SINGLE_CASE_CHARSET_SIZE;
+				*charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE;
 				return "Try including numbers and symbols";
 			case DIGITS:
 				*charsetSizePtr = DIGITS_CHARSET_SIZE;
@@ -69,8 +69,8 @@ char* deduceCharsetSizeAndAdvice(const int passLength, const int passType, int* 
 				*charsetSizePtr = SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE;
 				return "Try varying the case of letters, and including symbols";
 			case ALNUM:
-				*charsetSizePtr = 2*SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE;
-				return "Try including special symbols (eg. _)";
+				*charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE;
+				return "Try including special symbols (e.g., '_', '-')";
 			case SYMBOLS:
 				*charsetSizePtr = SYMBOLS_CHARSET_SIZE;
 				return "Try including letters and numbers";
@@ -81,13 +81,14 @@ char* deduceCharsetSizeAndAdvice(const int passLength, const int passType, int* 
 				*charsetSizePtr = SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
 				return "Try varying the case of letters used in the password";
 			case DOUBLE_CASE_AND_SYMBOLS:
-				*charsetSizePtr = 2*SINGLE_CASE_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
+				*charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
 				return "Try including numbers";
 			case DIGITS_AND_SYMBOLS:
 				*charsetSizePtr = DIGITS_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
 				return "Try including letters";
 			case ALL:
-				*charsetSizePtr = 2*SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
+				*charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
+				// Password length check:
 				if (passLength < 8)
 					return "Try making your password longer";
 				if (passLength < 13)
@@ -101,7 +102,7 @@ char* deduceCharsetSizeAndAdvice(const int passLength, const int passType, int* 
 bool isCommonPassword(const char* pass) {
 	FILE *fp = fopen(COMMON_PASS_FILE_NAME, "r"); // The most straightforward way to read from file in C is line by line so I write a password on each line in the file as opposed to have the passwords as comma-separated variables
     if (fp != NULL) {						// For multiple fields of data this can be used for .csv: http://stackoverflow.com/questions/26443492/read-comma-separated-values-from-a-text-file-in-c
-        char password[20];
+        char password[20]; // 20 = Arbitrary max length
 		while (fgets(password, sizeof password, fp) != NULL) {
 			// Trick to remove trailing newline characters from fgets() input.
 			size_t ln = strlen(password) - 1;
@@ -193,9 +194,8 @@ int main(int argc, char* argv[]) {
 	unsigned long long secondsULL = 0, minutes = 0, hours = 0;
 	int days = 0, years = 0, centuries = 0; // I tried converting these variables to pointers and putting some code in functions by passing by reference but the app kept on crashing.
 	
-	if (seconds > ULLONG_MAX) {
+	if (seconds > ULLONG_MAX)
 		tooManySeconds = true;
-	}
 	else if (seconds >= 60.0) { // If the time is more than 1 minute
 		manySeconds = true;
 		secondsULL = (unsigned long long)seconds;

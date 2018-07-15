@@ -27,7 +27,7 @@ int mod(const int a, const int b) {
      return mod(a, -b);   
    int ret = a % b;
    if (ret < 0)
-     ret+=b;
+     ret += b;
    return ret;
 }
 
@@ -36,9 +36,9 @@ char caesarShift(const char toShift, const int shiftVal) {
 		return toShift;
 	int charIndex, aValue;
 	if (islower(toShift))
-		aValue = 97;
+		aValue = 97; // 'a' ASCII = 97
 	else
-		aValue = 65;
+		aValue = 65; // 'A' ASCII = 65
 	charIndex = toShift - aValue;
 	return (char)(mod(charIndex + shiftVal, 26) + aValue);
 }
@@ -148,11 +148,10 @@ int main(int argc, char *argv[]) {
 	
 	if (!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e"))
 		encryptDecrypt(argv[1], argv[2], argv[3]);
-	else { // if argv[1] == "-a"
+	else // if argv[1] == "-a"
 		if (argc == 3) // If a substring is not specified
 			bruteForceAttack(argv[2]);
 		else // argc == 4
 			dictionaryAttack(argv[2], argv[3]);
-	}	
 	// return EXIT_SUCCESS;
 }

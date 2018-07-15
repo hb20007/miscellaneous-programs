@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * <p>For the purposes of this simulation I will implement the dining savages scenario using monitors. I use 3 savages and a maximum
  * of 5 servings in the pot however both these constants (located at the beginning of main()) can be modified.</p>
  * 
- * @author hzsab
+ * @author hb20007
 */
 public class Application {
 	/**

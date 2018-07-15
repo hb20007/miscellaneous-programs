@@ -24,7 +24,7 @@ import java.util.Random;
  * variables: temperature and humidity. I implement a safe method for various threads to write to these variables and I also
  * create a GUI with the rest of the elements described in the exercise such as a display and dials (sliders).</p>
  * 
- * @author hzsab
+ * @author hb20007
 */
 public class Application {
 	private WeatherController weatherController;

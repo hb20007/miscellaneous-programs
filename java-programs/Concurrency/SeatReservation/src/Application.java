@@ -12,7 +12,7 @@ import javax.swing.plaf.ColorUIResource;
  * <p>For the purposes of this simulation I will consider a system with 4 seats and 2 agents. Each agent has their own interface to
  * view and reserve seats.</p>
  * 
- * @author hzsab
+ * @author hb20007
 */
 public class Application {
 	/**
