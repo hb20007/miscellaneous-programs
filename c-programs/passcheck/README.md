@@ -6,25 +6,25 @@ Determines the strength of a given password. The features will be demonstrated b
 
 ## 1. A password that is too popular
 
-![](Examples/commonpass.png)
+![](examples/commonpass.png)
 
 The list of common passwords in `commonPasswords.dat` is used to check if the password inserted is too common.
 
 ## 2. A weak password
 
-![](Examples/weakpass.png)
+![](examples/weakpass.png)
 
 ## 3. A medium security-level password
 
-![](Examples/mediumpass.png)
+![](examples/mediumpass.png)
 
 ## 4. A strong password
 
-![](Examples/strongpass.png)
+![](examples/strongpass.png)
 
 ## 5. An ultra strong password
 
-![](Examples/superstrongpass.png)
+![](examples/superstrongpass.png)
 
 ## Meta
 

@@ -5,8 +5,8 @@ A collection of small programs &mdash; cryptography, simulations, algorithms etc
 
 ## Contents
 ### 1. [`c-programs`](c-programs)
-- [Caesar cipher implementation in C](c-programs/CaesarCipher)
-- [Password strength checker](c-programs/PasswordChecker)
+- [Caesar cipher implementation in C](c-programs/caesar)
+- [Password strength checker](c-programs/passcheck)
 
 ### 2. [`csharp-programs`](csharp-programs)
 - [Visual Studio projects with Windows Forms...](csharp-programs)

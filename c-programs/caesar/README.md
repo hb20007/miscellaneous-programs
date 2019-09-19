@@ -10,27 +10,27 @@ The program has 4 features:
 
 ## 1. Encryption
 
-A key (right shift index) in the range [1, 25] must be specified. Examples below:
+A key (right shift index) in the range [1, 25] must be specified. examples below:
 
-![](Examples/encryption.png)
+![](examples/encryption.png)
 
 ## 2. Decryption
 
 The key should be known and provided.
 
-![](Examples/decryption.png)
+![](examples/decryption.png)
 
 ## 3. Brute force attack
 
 Displays decryption of the given message with all possible keys (highlighting not a feature).
 
-![](Examples/brute-force.png)
+![](examples/brute-force.png)
 
 ## 4. Brute force attack with known substring
 
 Decrypts a ciphertext with an unknown key when you know a word in the plaintext (case-sensitive).
 
-![](Examples/brutus.png)
+![](examples/brutus.png)
 
 ## Meta
 
