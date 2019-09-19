@@ -134,15 +134,15 @@ void dictionaryAttack(char* word, const char* ciphertext) {
 */
 int main(int argc, char *argv[]) {
 	if (argc < 3 || argc > 4) {
-		fprintf(stderr, "Error: The program must be called with 2 or 3 arguments\n");
+		fprintf(stderr, "Error: The program must be called with 2 or 3 arguments. Usage: \"caesar -e|-d|-a [known_substring] ciphertext\"\n");
 		exit(EXIT_FAILURE);
 	}
 	if (strcmp(argv[1], "-e") && strcmp(argv[1], "-d") && strcmp(argv[1], "-a")) {
-		fprintf(stderr, "Error: %s is not a valid option\n", argv[1]);
+		fprintf(stderr, "Error: %s is not a valid option. Valid options: \"-e\", \"-d\" and \"-a\"\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 	if ((!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e")) && argc != 4) { // ie. if ((argv[1] == "-d" || argv[1] == "-e") && argc != 4
-		fprintf(stderr, "Error: With %s the program must be called with 3 arguments", argv[1]);
+		fprintf(stderr, "Error: With %s the program must be called with 3 arguments.", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 	
