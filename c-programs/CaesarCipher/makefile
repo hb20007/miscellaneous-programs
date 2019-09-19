@@ -1,10 +1,10 @@
 #
-# Makefile for passcheck.c
+# Makefile for caesar.c
 #
 # Compiler: GCC
 #
 
-PROGRAM_NAME = passcheck
+PROGRAM_NAME = caesar
 CC = gcc
 
 .PHONY: clean
