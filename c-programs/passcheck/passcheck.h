@@ -13,23 +13,23 @@
 * @brief The name of the file with the list of common passwords
 * @note Sources: http://www.telegraph.co.uk/technology/2017/01/16/worlds-common-passwords-revealed-using/ and http://www.telegraph.co.uk/technology/2016/01/26/most-common-passwords-revealed---and-theyre-ridiculously-easy-to/
 */
-#define COMMON_PASS_FILE_NAME "commonPasswords.dat"		
- 
+#define COMMON_PASS_FILE_NAME "commonPasswords.dat"
+
 /**
-* @brief The number of password keys attempted per second in a brute force attack on a core i5-6600K processor
+* @brief The number of password keys attempted per second in a brute-force attack on a core i5-6600K processor
 * @note Source: https://www.betterbuys.com/estimating-password-cracking-times/
 */
-#define KEYS_PER_SECOND	11344618	
+#define KEYS_PER_SECOND	11344618
 
 //@{
-/** @name Entropy per character multipliers */ 
+/** @name Entropy per character multipliers */
 #define SINGLE_CASE_CHARSET_SIZE 26
 #define DIGITS_CHARSET_SIZE 10
 #define SYMBOLS_CHARSET_SIZE 32
 //@}
 
 //@{
-/** @name Constants for converting between time units */ 
+/** @name Constants for converting between time units */
 #define SECONDS_IN_A_CENTURY 3153600000
 #define SECONDS_IN_A_YEAR 31557600
 #define SECONDS_IN_A_DAY 86400
@@ -54,9 +54,9 @@ enum {DIGITS,
 	  SINGLE_CASE_NUMBERS_SYMBOLS,
 	  DOUBLE_CASE_AND_SYMBOLS,
 	  ALL};
-	  
+
 /* FUNCTIONS */
-	  
+
 /**
 * @brief Returns the password type as defined in the enum in the header file
 * @param pass The password string
