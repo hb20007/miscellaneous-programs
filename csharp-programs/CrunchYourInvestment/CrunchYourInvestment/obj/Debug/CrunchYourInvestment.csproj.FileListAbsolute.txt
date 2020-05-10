@@ -1,9 +1,0 @@
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\bin\Debug\CrunchYourInvestment.exe.config
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\bin\Debug\CrunchYourInvestment.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\bin\Debug\CrunchYourInvestment.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.csprojResolveAssemblyReference.cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.CrunchYourInvestmentForm.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.Properties.Resources.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.csproj.GenerateResource.Cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\CrunchYourInvestment\CrunchYourInvestment\obj\Debug\CrunchYourInvestment.pdb

@@ -1,9 +1,0 @@
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\bin\Debug\USAStateLookup.exe.config
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\bin\Debug\USAStateLookup.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\bin\Debug\USAStateLookup.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.csprojResolveAssemblyReference.cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.Properties.Resources.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.USAStateLookupForm.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.csproj.GenerateResource.Cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\USAStateLookup\USAStateLookup\obj\Debug\USAStateLookup.pdb

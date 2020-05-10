@@ -1,9 +1,0 @@
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\bin\Debug\PamperYourSolesShoeCatalog.exe.config
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\bin\Debug\PamperYourSolesShoeCatalog.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\bin\Debug\PamperYourSolesShoeCatalog.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.csprojResolveAssemblyReference.cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.shoeCatalogForm.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.Properties.Resources.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.csproj.GenerateResource.Cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\PamperYourSolesShoeCatalog\PamperYourSolesShoeCatalog\obj\Debug\PamperYourSolesShoeCatalog.pdb

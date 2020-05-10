@@ -1,9 +1,0 @@
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\bin\Debug\RifleBeautySalon.exe.config
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\bin\Debug\RifleBeautySalon.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\bin\Debug\RifleBeautySalon.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.Properties.Resources.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.RifleBeautySalonForm.resources
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.csproj.GenerateResource.Cache
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.exe
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.pdb
-C:\Users\hzsab\Desktop\HZ\Programming\C#\RifleBeautySalon\RifleBeautySalon\obj\Debug\RifleBeautySalon.csprojResolveAssemblyReference.cache
