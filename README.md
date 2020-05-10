@@ -5,10 +5,10 @@ A collection of small programs &mdash; cryptography, simulations, algorithms etc
 
 ## Contents
 
-### 1. [`c-programs`](c-programs)
+### [`c-programs`](c-programs)
 - [Caesar cipher implementation in C](c-programs/caesar)
 - [Password strength checker](c-programs/passcheck)
 	
-### 3. [`java-programs`](java-programs)
+### [`java-programs`](java-programs)
 - [Concurrency demos](java-programs/Concurrency)
 - [The 2 functions challenge](java-programs/TwoFunctionsChallenge.java)
