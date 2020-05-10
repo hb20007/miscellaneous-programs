@@ -1,5 +1,0 @@
-﻿  main.cpp
-c:\users\hzsab\desktop\hz\programming\c++\vulkan app\vulkan app\main.cpp(398): warning C4018: '<': signed/unsigned mismatch
-c:\users\hzsab\desktop\hz\programming\c++\vulkan app\vulkan app\main.cpp(613): warning C4838: conversion from 'int' to 'uint32_t' requires a narrowing conversion
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  Vulkan App.vcxproj -> C:\Users\hzsab\Desktop\HZ\Programming\C++\Vulkan App\Debug\Vulkan App.exe
