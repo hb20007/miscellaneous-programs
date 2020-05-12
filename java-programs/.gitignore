@@ -1,6 +1,0 @@
-#
-# .gitignore for miscellaneous-programs/java-programs
-#
-
-.metadata/
-bin/

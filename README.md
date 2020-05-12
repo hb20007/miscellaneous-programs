@@ -8,7 +8,3 @@ A collection of small programs &mdash; cryptography, simulations, algorithms etc
 ### [`c-programs`](c-programs)
 - [Caesar cipher implementation in C](c-programs/caesar)
 - [Password strength checker](c-programs/passcheck)
-	
-### [`java-programs`](java-programs)
-- [Concurrency demos](java-programs/Concurrency)
-- [The 2 functions challenge](java-programs/TwoFunctionsChallenge.java)
