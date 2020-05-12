@@ -4,7 +4,7 @@ import javax.swing.DefaultListModel;
 
 /*
  * The weather events class with methods that trigger weather events that use the weather controller to register changes to the temperature and humidity.
- * @author hzsab
+ * @author hb20007
  */
 public class WeatherEvents {
 	private WeatherController weatherController;

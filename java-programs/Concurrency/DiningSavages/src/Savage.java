@@ -1,6 +1,6 @@
 /*
  * Class representing a savage in the scenario.
- * @author hzsab
+ * @author hb20007
  */
 public class Savage {
 	/*

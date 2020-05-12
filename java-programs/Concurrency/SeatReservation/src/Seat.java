@@ -2,7 +2,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  * Class representing the seat entity in this simulation.
- * @author hzsab
+ * @author hb20007
  */
 public class Seat {
 	private int number;

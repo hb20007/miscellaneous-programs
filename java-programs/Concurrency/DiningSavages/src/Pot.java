@@ -2,7 +2,7 @@ import java.util.Random;
 
 /*
  * Class representing a pot in the scenario.
- * @author hzsab
+ * @author hb20007
  */
 final public class Pot {
 	/*

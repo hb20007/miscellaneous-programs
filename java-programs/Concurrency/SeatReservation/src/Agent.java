@@ -1,6 +1,6 @@
 /*
  * Class representing an Agent in the simulation
- * @author hzsab
+ * @author hb20007
  */
 public class Agent {
 	private String name;

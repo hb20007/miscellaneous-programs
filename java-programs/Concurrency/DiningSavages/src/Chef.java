@@ -1,6 +1,6 @@
 /*
  * Class representing a chef in the scenario
- * @author hzsab
+ * @author hb20007
  */
 public class Chef {
 	/*

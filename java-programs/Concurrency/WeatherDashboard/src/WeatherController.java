@@ -1,6 +1,6 @@
 /*
  * The weather controller class
- * @author hzsab
+ * @author hb20007
  */
 public class WeatherController {
 	private int temperature;
