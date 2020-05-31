@@ -146,11 +146,11 @@ void printResult(const char* passStrength, const bool commonPassword, const bool
 
 void printDetails(const char* pass, const int passLength, const int charsetSize, const double passBitStrength, const char* charsetAdvice) {
 	printf("DETAILS\n");
-	printf("> Password: %s\n", pass);
-	printf("> Password length: %d characters\n", passLength);
-	printf("> Charset size: %d characters\n", charsetSize);
-	printf("> Entropy: %.1f bits\n", passBitStrength);
-	printf("> Advice: %s.\n", charsetAdvice);
+	printf("- Password: %s\n", pass);
+	printf("- Password length: %d characters\n", passLength);
+	printf("- Charset size: %d characters\n", charsetSize);
+	printf("- Entropy: %.1f bits\n", passBitStrength);
+	printf("- Advice: %s.\n", charsetAdvice);
 }
 
 /**
