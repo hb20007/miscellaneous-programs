@@ -3,6 +3,7 @@
 > Caesar cipher implementation in C
 
 The program has 4 features:
+
 * Encryption (`-e`)
 * Decryption (`-d`)
 * Brute force attack (`-a`)
@@ -70,8 +71,8 @@ Success! Key: 5 Plaintext: The fault, dear Brutus, is not in our stars, but in o
 
 ## Meta
 
-H. Z. Sababa &mdash; hb20007 &mdash; hzsababa@outlook.com
+H. Z. Sababa &mdash; hb20007 &mdash; <hzsababa@outlook.com>
 
 Distributed under the MIT license. See `LICENSE.md` for more information.
 
-https://github.com/hb20007
+<https://github.com/hb20007>

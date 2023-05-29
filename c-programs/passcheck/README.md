@@ -84,8 +84,8 @@ DETAILS
 
 ## Meta
 
-H. Z. Sababa &mdash; hb20007 &mdash; hzsababa@outlook.com
+H. Z. Sababa &mdash; hb20007 &mdash; <hzsababa@outlook.com>
 
 Distributed under the MIT license. See `LICENSE.md` for more information.
 
-https://github.com/hb20007
+<https://github.com/hb20007>
