@@ -22,23 +22,26 @@
 #include <stdbool.h> // For the macros bool, true and false
 
 int mod(const int a, const int b) {
-   if (b < 0) // b is usually not negative but just in case it is.
-     return mod(a, -b);
-   int ret = a % b;
-   if (ret < 0)
-     ret += b;
-   return ret;
+  if (b < 0) // b is usually not negative but just in case it is.
+    return mod(a, -b);
+  int ret = a % b;
+  if (ret < 0)
+    ret += b;
+  return ret;
 }
 
 char caesarShift(const char toShift, const int shiftVal) {
 	if (!isalpha(toShift))
 		return toShift;
-	int charIndex, aValue;
+
+	int charIndex;
+	int aValue;
 	if (islower(toShift))
 		aValue = 97; // 'a' ASCII = 97
 	else
 		aValue = 65; // 'A' ASCII = 65
 	charIndex = toShift - aValue;
+
 	return (char)(mod(charIndex + shiftVal, 26) + aValue);
 }
 
@@ -152,5 +155,6 @@ int main(int argc, char *argv[]) {
 			bruteForceAttack(argv[2]);
 		else // argc == 4
 			dictionaryAttack(argv[2], argv[3]);
-	// return EXIT_SUCCESS;
+
+	return EXIT_SUCCESS;
 }
