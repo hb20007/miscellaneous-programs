@@ -3,27 +3,20 @@
  * @author hb20007
  * @date 04/03/2017
  * @brief Uses command line arguments to implement Caesar encryption,
- * decryption, brute force attack and informed brute force attack
- *
- * Usage instructions:
- * "caesar -e 1 message" for encryption with offset 1
- * "caesar -d 5 message" for decryption with offset 5
- * "caesar -a message" for a brute force attack on ciphertext
- * "caesar -a substring message" for a brute force attack that only prints out
- * decryptions containing the substring Command line options are case sensitive.
+ * decryption, brute force attack, and informed brute force attack
  */
 
 #include "caesar.h"
-#include <ctype.h> // For isupper(), tolower() etc.
-#include <errno.h> // errno.h is a header file in the standard library of the C programming language. It defines macros for reporting and retrieving error conditions through error codes stored in a static memory location called errno (short for "error number").
+#include <ctype.h> // For isupper(), tolower(), etc.
+#include <errno.h> // Defines macros for reporting and retrieving error conditions through error codes stored in a static memory location called "errno".
 #include <limits.h>  // For LONG_MAX and LONG_MIN
-#include <stdbool.h> // For the macros bool, true and false
+#include <stdbool.h> // For the macros bool, true, and false
 #include <stdio.h>
-#include <stdlib.h> // For EXIT_FAILURE & EXIT_SUCCESS. Also for strtol() (There is no strtoi(). Also atoibut should be avoided due to the fact it lacks a mechanism for error reporting from invalid input.
+#include <stdlib.h> // For EXIT_FAILURE, EXIT_SUCCESS, and strtol() (There is no strtoi().)
 #include <string.h>
 
 int mod(const int a, const int b) {
-  if (b < 0) // b is usually not negative but just in case it is.
+  if (b < 0)
     return mod(a, -b);
 
   int ret = a % b;
@@ -57,8 +50,8 @@ long parseShiftValue(const char *shiftAmount) {
   /* Check for various possible errors. */
   if ((errno == ERANGE && (shiftValue == LONG_MAX || shiftValue == LONG_MIN)) ||
       (errno != 0 && shiftValue == 0)) { // ERANGE is an error code implying the resulting value was out of range. If an underflow occurs, strtol() returns LONG_MIN. If an overflow occurs, strtol() returns LONG_MAX.
-    perror("Error (strtol)"); // void perror(const char *str) prints a descriptive error message to stderr. First the string str is printed, followed by a colon then a space. Then the exit(EXIT_FAILURE) will add the error description after the colon.
-    exit(EXIT_FAILURE); // The error that would be printed here is "Result too large" etc. Btw it doesn't print a period after the string and also prints a new line after the string.
+    perror("Error (strtol)"); // void perror(const char *str) prints a descriptive error message to stderr.
+    exit(EXIT_FAILURE); // The error that would be printed here is "Result too large\n", etc.
   }
   if (endptr == shiftAmount) {
     fprintf(stderr,
@@ -86,12 +79,12 @@ void shiftAndPrint(const long caesarKey, const char *msg) {
 
 void encryptDecrypt(const char *mode, const char *shiftAmt,
                     const char *message) {
-  long key = parseShiftValue(shiftAmt); // A key is a piece of information (a parameter) that determines the functional output of a cryptographic algorithm. For encryption algorithms, a key specifies the transformation of plaintext into ciphertext, and vice versa for decryption algorithms.
+  long key = parseShiftValue(shiftAmt);
 
   /* If we got here, strtol() successfully parsed a number in parseShiftValue(). */
   if (key > 25 || key < 1) {
     fprintf(stderr,
-            "Error: The shift value should be in the range [1, 25].\n"); // If a right shift of 3 is intended, i.e., e.g., a value of -3, just input -3 mod 26 which is 23.
+            "Error: The shift value should be in the range [1, 25].\n"); // If a right shift of 3 is intended, just input -3 mod 26, which is 23.
     exit(EXIT_FAILURE);
   }
 
@@ -116,13 +109,13 @@ void shiftCharsOnce(char *string) {
 }
 
 void dictionaryAttack(char *word, const char *ciphertext) {
-  // Shifting the ciphertext every time and checking the output for the word is tedious so instead I will shift the word for every possible key and see if it is contained in the ciphertext to determine the key.
+  // Shifting the ciphertext every time and checking the output for the word is tedious, so instead, we shift the word for every possible key and see if it is contained in the ciphertext to determine the key.
   bool successFlag = false;
   for (int i = 1; i < 26; i++) {
     shiftCharsOnce(word);
-    if (strstr(ciphertext, word)) { // strstr() in <cstring> takes 2 arguments str1 and str2. Returns a pointer to the first occurrence of str2 in str1, or a null pointer if str2 is not part of str1. The null pointer is 0. So if(ptr) is true if ptr is not null.
+    if (strstr(ciphertext, word)) { // strstr() in <cstring> takes two arguments, str1 and str2, and returns a pointer to the first occurrence of str2 in str1, or a null pointer if str2 is not part of str1. The null pointer is 0. So if(ptr) is true if ptr is not null.
       successFlag = true;
-      printf("Success! Key: %d Plaintext: ", i);
+      printf("Success! Key: %d, Plaintext: ", i);
       shiftAndPrint(i - 2 * i, ciphertext);
       printf("\n");
     }
@@ -136,15 +129,7 @@ void dictionaryAttack(char *word, const char *ciphertext) {
   }
 }
 
-/**
- * @brief Main function
- *
- * Validates the command line arguments and then executes the algorithm
- *
- * @param argc Count of the command line arguments
- * @param argv An argument array of the command line arguments
- * @return 0 upon exit success, and a non-zero integer upon exit failure
- */
+
 int main(int argc, char *argv[]) {
   if (argc < 3 || argc > 4) {
     fprintf(stderr,
@@ -160,7 +145,7 @@ int main(int argc, char *argv[]) {
     exit(EXIT_FAILURE);
   }
   if ((!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e")) &&
-      argc != 4) { // i.e., if ((argv[1] == "-d" || argv[1] == "-e") && argc != 4
+      argc != 4) { // I.e., if ((argv[1] == "-d" || argv[1] == "-e") && argc != 4
     fprintf(stderr,
             "Error: With %s the program must be called with 3 arguments.",
             argv[1]);
@@ -170,7 +155,7 @@ int main(int argc, char *argv[]) {
   if (!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e"))
     encryptDecrypt(argv[1], argv[2], argv[3]);
   else // if argv[1] == "-a"
-    if (argc == 3) // if a substring is not specified
+    if (argc == 3) // If a substring is not specified
       bruteForceAttack(argv[2]);
     else // argc == 4
       dictionaryAttack(argv[2], argv[3]);

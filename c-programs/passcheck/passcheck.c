@@ -61,8 +61,7 @@ char const *deduceCharsetSizeAndAdvice(const int passLength, const int passType,
   switch (passType) {
   case SINGLE_CASE_ALPHA:
     *charsetSizePtr = SINGLE_CASE_CHARSET_SIZE;
-    return "Try varying the case of letters, and including numbers and "
-           "symbols.";
+    return "Try varying the case of letters and including numbers and symbols.";
   case DOUBLE_CASE_ALPHA:
     *charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE;
     return "Try including numbers and symbols.";
@@ -71,10 +70,10 @@ char const *deduceCharsetSizeAndAdvice(const int passLength, const int passType,
     return "Try including letters and symbols.";
   case SINGLE_CASE_AND_DIGITS:
     *charsetSizePtr = SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE;
-    return "Try varying the case of letters, and including symbols.";
+    return "Try varying the case of letters and including symbols.";
   case ALNUM:
     *charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE;
-    return "Try including special symbols (e.g., '_', '-').";
+    return "Try including symbols (e.g., '_', '-').";
   case SYMBOLS:
     *charsetSizePtr = SYMBOLS_CHARSET_SIZE;
     return "Try including letters and numbers.";
@@ -98,23 +97,23 @@ char const *deduceCharsetSizeAndAdvice(const int passLength, const int passType,
     if (passLength < 8)
       return "Try making your password longer.";
     if (passLength < 13)
-      return "The password is fairly secure and skilled hackers may need good "
+      return "The password is fairly secure, and skilled hackers may need good "
              "computing power to crack it.\nTry making it longer for even "
              "extra security.";
     if (passLength < 25)
       return "The password is good enough to safely guard sensitive or "
              "financial information.";
-    return "The password is virtually impossible to crack. Often this level of "
-           "security is overkill.";
+    return "The password is virtually impossible to crack. Often, this level "
+           "of security is overkill.";
   }
 }
 
 bool isCommonPassword(const char *pass) {
-  FILE *fp = fopen(COMMON_PASS_FILE_NAME, "r"); // Flawfinder: ignore. The most straightforward way to read from file in C is line by line so I write a password on each line in the file as opposed to have the passwords as comma-separated variables.
-  if (fp != NULL) { // For multiple fields of data this can be used for .csv: http://stackoverflow.com/questions/26443492/read-comma-separated-values-from-a-text-file-in-c
+  FILE *fp = fopen(COMMON_PASS_FILE_NAME, "r"); // Flawfinder: ignore. The most straightforward way to read from a file in C is line by line, so the passwords in the file are separated by new lines.
+  if (fp != NULL) { // For multiple fields of data. This can also be used for .csv: http://stackoverflow.com/questions/26443492/read-comma-separated-values-from-a-text-file-in-c
     char password[20]; // Flawfinder: ignore. 20 = Arbitrary max length
     while (fgets(password, sizeof password, fp) != NULL) {
-      // Trick to remove trailing newline characters from fgets() input.
+      // Trick to remove trailing newline characters from fgets() input:
       size_t ln = strlen(password) - 1; // Flawfinder: ignore
       if (*password && password[ln] == '\n')
         password[ln] = '\0';
@@ -138,11 +137,11 @@ void printResult(const char *passStrength, const bool isPasswordCommon,
   if (isPasswordCommon)
     printf("It can be cracked instantly.\n\n");
   else if (!manySeconds && !tooManySeconds)
-    printf("It can be cracked in %f seconds on a core i5-6600K processor.\n\n",
+    printf("It can be cracked in %f seconds on a modern processor.\n\n",
            seconds);
   else if (tooManySeconds)
-    printf("Cracking this password would take hundreds of centuries on a core "
-           "i5-6600K processor.\n\n");
+    printf("Cracking this password would take hundreds of centuries on a "
+           "modern processor.\n\n");
   else {
     printf("It can be cracked in ");
     if (centuries > 0)
@@ -157,7 +156,7 @@ void printResult(const char *passStrength, const bool isPasswordCommon,
       printf("%llu minute(s) ", minutes);
     if (secondsULL > 0)
       printf("%llu second(s) ", secondsULL);
-    printf("on a core i5-6600K processor.\n\n");
+    printf("on a modern processor.\n\n");
   }
 }
 
@@ -171,27 +170,21 @@ void printDetails(const char *pass, const int passLength, const int charsetSize,
   printf("- Advice: %s.\n", charsetAdvice);
 }
 
-/**
- * @brief Main function
- * @param argc Count of the command line arguments
- * @param argv An argument array of the command line arguments
- * @return 0 upon exit success, and a non-zero integer upon exit failure
- */
 int main(int argc, char *argv[]) {
   if (argc != 2) {
     fprintf(
         stderr,
-        "Error: The program must be called with 1 argument, the password.\n");
+        "Error: The program must be called with one argument, the password.\n");
     exit(EXIT_FAILURE);
   }
 
   const char *pass = argv[1];
   int passLength = static_cast<int>(strlen(pass)); // Flawfinder: ignore.
   int charsetSize = 0;
-  const char *charsetAdvice = "Arbitrary initialization"; // The arbitrary initialization here is a must because the pointer will be passed into a function for initialization and would point to a random place in memory otherwise. An alt to this is using malloc().
+  const char *charsetAdvice = "temp"; // The arbitrary initialization here is a must because the pointer will be assigned a value later, and would otherwise have been pointing to a random place in memory. An alt to this is using malloc().
   int passType;
   bool isPasswordCommon = false;
-  const char *passStrength = "Arbitrary initialization";
+  const char *passStrength = "temp";
   double entropy;
   double passBitStrength;
   double seconds;
@@ -202,23 +195,23 @@ int main(int argc, char *argv[]) {
   charsetAdvice =
       deduceCharsetSizeAndAdvice(passLength, passType, charsetSizePtr);
 
-  entropy = pow(charsetSize, passLength); // double is enough for passwords of length up to 8180 characters. More than this is not allowed on Windows.
+  entropy = pow(charsetSize, passLength); // double is enough for passwords of length up to 8180 characters, which is the limit on Windows.
   passBitStrength = log2(entropy);
   seconds = entropy / KEYS_PER_SECOND;
 
-  bool manySeconds = false; // Is set to true if the time is more than 1 minute
-  bool tooManySeconds = false; // Is set to true if the time in seconds is more than C can handle
+  bool manySeconds = false; // Set to true if the time is more than 1 minute.
+  bool tooManySeconds = false; // Set to true if the time in seconds is more than C can handle.
 
   unsigned long long secondsULL = 0;
   unsigned long long minutes = 0;
   unsigned long long hours = 0;
   int days = 0;
   int years = 0;
-  int centuries = 0; // I tried converting these variables to pointers and putting some code in functions by passing by reference but the app kept on crashing.
+  int centuries = 0;
 
   if (seconds > static_cast<double>(ULLONG_MAX))
     tooManySeconds = true;
-  else if (seconds >= 60.0) { // If the time is more than 1 minute
+  else if (seconds >= 60.0) {
     manySeconds = true;
     secondsULL = (unsigned long long)seconds;
   }

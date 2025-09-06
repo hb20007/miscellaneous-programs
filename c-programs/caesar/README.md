@@ -2,7 +2,7 @@
 
 > Caesar cipher implementation in C
 
-The program has 4 features:
+The program has four features:
 
 * Encryption (`-e`)
 * Decryption (`-d`)
@@ -14,7 +14,7 @@ The program has 4 features:
 A key (right shift index) in the range [1, 25] must be specified.
 
 ```console
-> caesar -e 12 "Get me a vanilla ice cream, make it a double"
+> caesar -e 12 "Get me a vanilla ice cream, make it a double."
 Sqf yq m hmzuxxm uoq odqmy, ymwq uf m pagnxq.
 ```
 
@@ -66,13 +66,5 @@ Decrypts a ciphertext with an unknown key when you know a word in the plaintext 
 
 ```console
 > caesar -a Brutus "Ymj kfzqy, ijfw Gwzyzx, nx sty ns tzw xyfwx, gzy ns tzwxjqajx."
-Success! Key: 5 Plaintext: The fault, dear Brutus, is not in our stars, but in ourselves.
+Success! Key: 5, Plaintext: The fault, dear Brutus, is not in our stars, but in ourselves.
 ```
-
-## Meta
-
-H. Z. Sababa &mdash; hb20007 &mdash; <hzsababa@outlook.com>
-
-Distributed under the MIT license. See `LICENSE.md` for more information.
-
-<https://github.com/hb20007>

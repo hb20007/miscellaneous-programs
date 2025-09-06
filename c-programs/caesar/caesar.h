@@ -2,11 +2,11 @@
  * @file caesar.h
  * @author hb20007
  * @date 04/03/2017
- * @brief Header file for caesar.c, contains function prototypes
+ * @brief Header file for caesar.c
  */
 
 /**
- * @brief Modulus function (works with negative numbers)
+ * @brief Modulus operation that handles negative values correctly
  * @param a The first integer
  * @param b The second integer
  * @return The result
@@ -47,7 +47,7 @@ extern void encryptDecrypt(const char *mode, const char *shiftAmt,
                            const char *message);
 
 /**
- * @brief Performs a brute force attack with all possible shift values
+ * @brief Performs a brute-force attack with all possible shift values
  * @param ciphertext The message to decrypt
  */
 extern void bruteForceAttack(const char *ciphertext);

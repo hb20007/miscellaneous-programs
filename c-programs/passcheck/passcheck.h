@@ -12,18 +12,18 @@
 /**
  * @brief The name of the file with the list of common passwords
  * @note Sources:
- * http://www.telegraph.co.uk/technology/2017/01/16/worlds-common-passwords-revealed-using/
+ * https://www.telegraph.co.uk/technology/2017/01/16/worlds-common-passwords-revealed-using/
  * and
- * http://www.telegraph.co.uk/technology/2016/01/26/most-common-passwords-revealed---and-theyre-ridiculously-easy-to/
+ * https://www.telegraph.co.uk/technology/2016/01/26/most-common-passwords-revealed---and-theyre-ridiculously-easy-to/
  */
 #define COMMON_PASS_FILE_NAME "commonPasswords.dat"
 
 /**
- * @brief The number of password keys attempted per second in a brute-force
- * attack on a core i5-6600K processor
- * @note Source: https://www.betterbuys.com/estimating-password-cracking-times/
+ * @brief Estimated number of password keys attempted per second in a brute-force
+ * attack on a modern (2025+) processor
+ * @note Adapted from: https://www.betterbuys.com/estimating-password-cracking-times/
  */
-#define KEYS_PER_SECOND 11344618
+#define KEYS_PER_SECOND 22000000
 
 //@{
 /** @name Entropy per character multipliers */
@@ -49,7 +49,7 @@
 enum {
   DIGITS,
   SINGLE_CASE_ALPHA,
-  SYMBOLS, // Symbols refers to special characters like $#&*_ etc.
+  SYMBOLS, // Special characters
   SINGLE_CASE_AND_DIGITS,
   DIGITS_AND_SYMBOLS,
   DOUBLE_CASE_ALPHA,
@@ -63,15 +63,14 @@ enum {
 /* FUNCTIONS */
 
 /**
- * @brief Returns the password type as defined in the enum in the header file
+ * @brief Returns the password type as defined in the enum in the header file.
  * @param pass The password string
  * @return The password type
  */
 extern int getPassType(const char *pass);
 
 /**
- * @brief Uses "passing by reference" to initialize charsetSize and returns
- * charsetAdvice
+ * @brief Initializes charsetSize and returns charsetAdvice
  * @param passLength The password length
  * @param passType The password type
  * @param charsetSizePtr Pointer to charsetSize
