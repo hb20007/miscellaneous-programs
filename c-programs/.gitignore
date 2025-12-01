@@ -3,4 +3,5 @@
 #
 
 *.o
+*.exe
 compile_commands.json

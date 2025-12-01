@@ -179,7 +179,7 @@ int main(int argc, char *argv[]) {
   }
 
   const char *pass = argv[1];
-  int passLength = static_cast<int>(strlen(pass)); // Flawfinder: ignore.
+  int passLength = (int)strlen(pass); // Flawfinder: ignore.
   int charsetSize = 0;
   const char *charsetAdvice = "temp"; // The arbitrary initialization here is a must because the pointer will be assigned a value later, and would otherwise have been pointing to a random place in memory. An alt to this is using malloc().
   int passType;
@@ -209,7 +209,7 @@ int main(int argc, char *argv[]) {
   int years = 0;
   int centuries = 0;
 
-  if (seconds > static_cast<double>(ULLONG_MAX))
+  if (seconds > (double)ULLONG_MAX)
     tooManySeconds = true;
   else if (seconds >= 60.0) {
     manySeconds = true;
@@ -217,15 +217,15 @@ int main(int argc, char *argv[]) {
   }
   if (manySeconds && !tooManySeconds) {
     if (secondsULL >= SECONDS_IN_A_CENTURY) {
-      centuries = static_cast<int>(secondsULL) / SECONDS_IN_A_CENTURY;
+      centuries = (int)secondsULL / SECONDS_IN_A_CENTURY;
       secondsULL %= SECONDS_IN_A_CENTURY;
     }
     if (secondsULL >= SECONDS_IN_A_YEAR) {
-      years = static_cast<int>(secondsULL) / SECONDS_IN_A_YEAR;
+      years = (int)secondsULL / SECONDS_IN_A_YEAR;
       secondsULL %= SECONDS_IN_A_YEAR;
     }
     if (secondsULL >= SECONDS_IN_A_DAY) {
-      days = static_cast<int>(secondsULL) / SECONDS_IN_A_DAY;
+      days = (int)secondsULL / SECONDS_IN_A_DAY;
       secondsULL %= SECONDS_IN_A_DAY;
     }
     if (secondsULL >= SECONDS_IN_AN_HOUR) {
