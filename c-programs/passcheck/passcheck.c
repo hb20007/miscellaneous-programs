@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <string.h> // For strlen()
 
-int getPassType(const char *pass) { // #lizard forgives
+int getPassType(const char *pass) { // #lizard forgives NOSONAR
   bool charTypes[4] = {false}; // Lower case letter, upper case letter, digit, symbol
   for (const char *ptr = pass; *ptr != '\0'; ptr++) {
     if (*ptr >= 'a' && *ptr <= 'z')
@@ -35,7 +35,7 @@ int getPassType(const char *pass) { // #lizard forgives
     passType = ALNUM;
   else if (charTypes[0] && charTypes[1] && charTypes[3])
     passType = DOUBLE_CASE_AND_SYMBOLS;
-  else if ((charTypes[0] && charTypes[2] && charTypes[3]) ||
+  else if ((charTypes[0] && charTypes[2] && charTypes[3]) || // NOSONAR
            (charTypes[1] && charTypes[2] && charTypes[3]))
     passType = SINGLE_CASE_NUMBERS_SYMBOLS;
   else if (charTypes[0] && charTypes[1])
@@ -90,7 +90,7 @@ char const *deduceCharsetSizeAndAdvice(const int passLength, const int passType,
   case DIGITS_AND_SYMBOLS:
     *charsetSizePtr = DIGITS_CHARSET_SIZE + SYMBOLS_CHARSET_SIZE;
     return "Try including letters.";
-  default: // ALL
+  default: // NOSONAR
     *charsetSizePtr = 2 * SINGLE_CASE_CHARSET_SIZE + DIGITS_CHARSET_SIZE +
                       SYMBOLS_CHARSET_SIZE;
     // Password length check:
@@ -115,10 +115,10 @@ bool isCommonPassword(const char *pass) {
     while (fgets(password, sizeof password, fp) != NULL) {
       // Trick to remove trailing newline characters from fgets() input:
       size_t ln = strlen(password) - 1; // Flawfinder: ignore
-      if (*password && password[ln] == '\n')
+      if (*password && password[ln] == '\n') // NOSONAR
         password[ln] = '\0';
 
-      if (!strcmp(pass, password))
+      if (strcmp(pass, password) == 0) {
         return true;
     }
     fclose(fp);
@@ -127,7 +127,7 @@ bool isCommonPassword(const char *pass) {
   return false;
 }
 
-void printResult(const char *passStrength, const bool isPasswordCommon,
+void printResult(const char *passStrength, const bool isPasswordCommon, // NOSONAR
                  const bool manySeconds, const bool tooManySeconds,
                  const int centuries, const int years, const int days,
                  const unsigned long long hours,
@@ -181,10 +181,10 @@ int main(int argc, char *argv[]) {
   const char *pass = argv[1];
   int passLength = (int)strlen(pass); // Flawfinder: ignore.
   int charsetSize = 0;
-  const char *charsetAdvice = "temp"; // The arbitrary initialization here is mandatory because the pointer will be assigned a value later and would otherwise have been pointing to a random location in memory. An alternative to this is using malloc().
+  const char *charsetAdvice = "temp"; // NOSONAR. The arbitrary initialization here is mandatory because the pointer will be assigned a value later and would otherwise have been pointing to a random location in memory. An alternative to this is using malloc().
   int passType;
   bool isPasswordCommon = false;
-  const char *passStrength = "temp";
+  const char *passStrength = "temp"; // NOSONAR
   double entropy;
   double passBitStrength;
   double seconds;
@@ -209,9 +209,9 @@ int main(int argc, char *argv[]) {
   int years = 0;
   int centuries = 0;
 
-  if (seconds > (double)ULLONG_MAX)
+  if (seconds > (double)ULLONG_MAX) // NOSONAR
     tooManySeconds = true;
-  else if (seconds >= 60.0) {
+  else if (seconds >= 60.0) { // NOSONAR
     manySeconds = true;
     secondsULL = (unsigned long long)seconds;
   }

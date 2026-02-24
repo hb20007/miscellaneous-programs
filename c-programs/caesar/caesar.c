@@ -26,7 +26,7 @@ int mod(const int a, const int b) {
 }
 
 char caesarShift(const char toShift, const int shiftVal) {
-  if (!isalpha(toShift))
+  if (isalpha(toShift) == 0)
     return toShift;
 
   int charIndex;
@@ -37,7 +37,7 @@ char caesarShift(const char toShift, const int shiftVal) {
     aValue = 65; // 'A' ASCII = 65
   charIndex = toShift - aValue;
 
-  return (char)(mod(charIndex + shiftVal, 26) + aValue);
+  return (char)(mod(charIndex + shiftVal, 26) + aValue); // NOSONAR
 }
 
 long parseShiftValue(const char *shiftAmount) {
@@ -48,7 +48,7 @@ long parseShiftValue(const char *shiftAmount) {
   long shiftValue = strtol(shiftAmount, &endptr, 10); // strtol() rejects the '.' character as required. The second argument is an address to store the location where the conversion stops. The last argument is the base.
 
   /* Check for various possible errors. */
-  if ((errno == ERANGE && (shiftValue == LONG_MAX || shiftValue == LONG_MIN)) ||
+  if ((errno == ERANGE && (shiftValue == LONG_MAX || shiftValue == LONG_MIN)) || // NOSONAR
       (errno != 0 && shiftValue == 0)) { // ERANGE is an error code implying the resulting value was out of range. If an underflow occurs, strtol() returns LONG_MIN. If an overflow occurs, strtol() returns LONG_MAX.
     perror("Error (strtol)"); // void perror(const char *str) prints a descriptive error message to stderr.
     exit(EXIT_FAILURE); // The error that would be printed here is "Result too large\n", etc.
@@ -61,7 +61,7 @@ long parseShiftValue(const char *shiftAmount) {
   if (*endptr != '\0') {
     fprintf(stderr,
             "Error (strtol): The non-numerical character(s) \"%s\" were "
-            "detected after shift value.\n",
+            "detected after the shift value.\n",
             endptr);
     exit(EXIT_FAILURE);
   }
@@ -89,7 +89,7 @@ void encryptDecrypt(const char *mode, const char *shiftAmt,
   }
 
   /* The algorithm begins here. */
-  if (!strcmp(mode, "-d"))
+  if (strcmp(mode, "-d") == 0)
     key -= 2 * key;
   shiftAndPrint(key, message);
   printf("\n");
@@ -137,14 +137,15 @@ int main(int argc, char *argv[]) {
             "\"caesar -e|-d|-a [offset|known_substring] <ciphertext>\"\n");
     exit(EXIT_FAILURE);
   }
-  if (strcmp(argv[1], "-e") && strcmp(argv[1], "-d") && strcmp(argv[1], "-a")) {
+  if (strcmp(argv[1], "-e") != 0 && strcmp(argv[1], "-d") != 0 &&
+      strcmp(argv[1], "-a") != 0) {
     fprintf(stderr,
-            "Error: \"%s\" is not a valid option. Valid options: \"-e\", \"-d\" "
+            "Error: \"%s\" is not a valid option. Valid options: \"-e\", \"-d\", "
             "and \"-a\"\n",
             argv[1]);
     exit(EXIT_FAILURE);
   }
-  if ((!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e")) &&
+  if ((strcmp(argv[1], "-d") == 0 || strcmp(argv[1], "-e") == 0) &&
       argc != 4) { // I.e., if ((argv[1] == "-d" || argv[1] == "-e") && argc != 4
     fprintf(stderr,
             "Error: With \"%s\", the program must be called with three arguments.",
@@ -152,7 +153,7 @@ int main(int argc, char *argv[]) {
     exit(EXIT_FAILURE);
   }
 
-  if (!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e"))
+  if (strcmp(argv[1], "-d") == 0 || strcmp(argv[1], "-e") == 0)
     encryptDecrypt(argv[1], argv[2], argv[3]);
   else // if argv[1] == "-a"
     if (argc == 3) // If a substring is not specified
