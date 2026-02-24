@@ -3,7 +3,7 @@
  * @author hb20007
  * @date 04/03/2017
  * @brief Uses command line arguments to implement Caesar encryption,
- * decryption, brute force attack, and informed brute force attack
+ * decryption, brute-force attack, and informed brute-force attack
  */
 
 #include "caesar.h"
@@ -45,7 +45,7 @@ long parseShiftValue(const char *shiftAmount) {
   char *endptr;
   errno = 0; // To distinguish success/failure after call
 
-  long shiftValue = strtol(shiftAmount, &endptr, 10); // strtol() rejects the '.' character as required. The second argument is an address to store the location where conversion stops. The last argument is the base.
+  long shiftValue = strtol(shiftAmount, &endptr, 10); // strtol() rejects the '.' character as required. The second argument is an address to store the location where the conversion stops. The last argument is the base.
 
   /* Check for various possible errors. */
   if ((errno == ERANGE && (shiftValue == LONG_MAX || shiftValue == LONG_MIN)) ||
@@ -123,7 +123,7 @@ void dictionaryAttack(char *word, const char *ciphertext) {
 
   if (!successFlag) {
     shiftCharsOnce(word); // We get back the original word.
-    printf("The string %s was not a substring of any plaintext for all "
+    printf("The string \"%s\" was not a substring of any plaintext for all "
            "possible shift values.\n",
            word);
   }
@@ -133,13 +133,13 @@ void dictionaryAttack(char *word, const char *ciphertext) {
 int main(int argc, char *argv[]) {
   if (argc < 3 || argc > 4) {
     fprintf(stderr,
-            "Error: The program must be called with 2 or 3 arguments. Usage: "
-            "\"caesar -e|-d|-a [offset|known_substring] ciphertext\"\n");
+            "Error: The program must be called with two or three arguments. Usage: "
+            "\"caesar -e|-d|-a [offset|known_substring] <ciphertext>\"\n");
     exit(EXIT_FAILURE);
   }
   if (strcmp(argv[1], "-e") && strcmp(argv[1], "-d") && strcmp(argv[1], "-a")) {
     fprintf(stderr,
-            "Error: %s is not a valid option. Valid options: \"-e\", \"-d\" "
+            "Error: \"%s\" is not a valid option. Valid options: \"-e\", \"-d\" "
             "and \"-a\"\n",
             argv[1]);
     exit(EXIT_FAILURE);
@@ -147,7 +147,7 @@ int main(int argc, char *argv[]) {
   if ((!strcmp(argv[1], "-d") || !strcmp(argv[1], "-e")) &&
       argc != 4) { // I.e., if ((argv[1] == "-d" || argv[1] == "-e") && argc != 4
     fprintf(stderr,
-            "Error: With %s the program must be called with 3 arguments.",
+            "Error: With \"%s\", the program must be called with three arguments.",
             argv[1]);
     exit(EXIT_FAILURE);
   }

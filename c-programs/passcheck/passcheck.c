@@ -99,7 +99,7 @@ char const *deduceCharsetSizeAndAdvice(const int passLength, const int passType,
     if (passLength < 13)
       return "The password is fairly secure, and skilled hackers may need good "
              "computing power to crack it.\nTry making it longer for even "
-             "extra security.";
+             "more security.";
     if (passLength < 25)
       return "The password is good enough to safely guard sensitive or "
              "financial information.";
@@ -145,17 +145,17 @@ void printResult(const char *passStrength, const bool isPasswordCommon,
   else {
     printf("It can be cracked in ");
     if (centuries > 0)
-      printf("%d centuries ", centuries);
+      printf("%d centuries, ", centuries);
     if (years > 0)
-      printf("%d year(s) ", years);
+      printf("%d year(s), ", years);
     if (days > 0)
-      printf("%d day(s) ", days);
+      printf("%d day(s), ", days);
     if (hours > 0)
-      printf("%llu hour(s) ", hours);
+      printf("%llu hour(s), ", hours);
     if (minutes > 0)
-      printf("%llu minute(s) ", minutes);
+      printf("%llu minute(s), ", minutes);
     if (secondsULL > 0)
-      printf("%llu second(s) ", secondsULL);
+      printf("and %llu second(s) ", secondsULL);
     printf("on a modern processor.\n\n");
   }
 }
@@ -163,11 +163,11 @@ void printResult(const char *passStrength, const bool isPasswordCommon,
 void printDetails(const char *pass, const int passLength, const int charsetSize,
                   const double passBitStrength, const char *charsetAdvice) {
   printf("DETAILS\n");
-  printf("- Password: %s\n", pass);
-  printf("- Password length: %d characters\n", passLength);
-  printf("- Charset size: %d characters\n", charsetSize);
-  printf("- Entropy: %.1f bits\n", passBitStrength);
-  printf("- Advice: %s.\n", charsetAdvice);
+  printf("— Password: %s\n", pass);
+  printf("— Password length: %d characters\n", passLength);
+  printf("— Charset size: %d characters\n", charsetSize);
+  printf("— Entropy: %.1f bits\n", passBitStrength);
+  printf("— Advice: %s.\n", charsetAdvice);
 }
 
 int main(int argc, char *argv[]) {
@@ -181,7 +181,7 @@ int main(int argc, char *argv[]) {
   const char *pass = argv[1];
   int passLength = (int)strlen(pass); // Flawfinder: ignore.
   int charsetSize = 0;
-  const char *charsetAdvice = "temp"; // The arbitrary initialization here is a must because the pointer will be assigned a value later, and would otherwise have been pointing to a random place in memory. An alt to this is using malloc().
+  const char *charsetAdvice = "temp"; // The arbitrary initialization here is mandatory because the pointer will be assigned a value later and would otherwise have been pointing to a random location in memory. An alternative to this is using malloc().
   int passType;
   bool isPasswordCommon = false;
   const char *passStrength = "temp";
@@ -243,7 +243,7 @@ int main(int argc, char *argv[]) {
   if (isPasswordCommon)
     passStrength = "VERY WEAK (COMMON PASSWORD)";
   else {
-    int passwordScore = 0; // The passwordScore is my invention. It is a function of the password length and type.
+    int passwordScore = 0; // The password score is my invention. It is a function of the password length and type.
     passwordScore += passLength;
     passwordScore += passType;
 

@@ -6,8 +6,8 @@ The program has four features:
 
 * Encryption (`-e`)
 * Decryption (`-d`)
-* Brute force attack (`-a`)
-* Brute force attack with known substring (`-a substring`)
+* Brute-force attack (`-a`)
+* Brute-force attack with a known substring (`-a <substring>`)
 
 ## 1. Encryption
 
@@ -27,9 +27,9 @@ The key should be known and provided.
 Caesar needs to lose weight.
 ```
 
-## 3. Brute force attack
+## 3. Brute-force attack
 
-Displays decryption of the given message with all possible keys.
+Displays the decryption of the given message with all possible keys.
 
 ```console
 > caesar -a "Rdlpgsh sxt bpcn ixbth qtudgt iwtxg stpiwh."
@@ -60,7 +60,7 @@ Key: 24 Plaintext: Tfnriuj uzv drep kzdvj svwfiv kyvzi uvrkyj.
 Key: 25 Plaintext: Semqhti tyu cqdo jycui ruvehu jxuyh tuqjxi.
 ```
 
-## 4. Brute force attack with known substring
+## 4. Brute-force attack with known substring
 
 Decrypts a ciphertext with an unknown key when you know a word in the plaintext (case-sensitive).
 

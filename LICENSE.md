@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright **&copy; 2025 hb20007**
+Copyright **&copy; 2026 hb20007**
 
 * * *
 
