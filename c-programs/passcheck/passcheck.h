@@ -21,7 +21,7 @@
 /**
  * @brief Estimated number of password keys attempted per second in a brute-force
  * attack on a modern (2025+) processor
- * @note Adapted from: https://www.betterbuys.com/estimating-password-cracking-times/
+ * @note Adapted from https://web.archive.org/web/20250824181052/https://www.betterbuys.com/estimating-password-cracking-times/
  */
 #define KEYS_PER_SECOND 22000000
 
@@ -63,7 +63,7 @@ enum {
 /* FUNCTIONS */
 
 /**
- * @brief Returns the password type as defined in the enum in the header file.
+ * @brief Returns the password type as defined in the enum in the header file
  * @param pass The password string
  * @return The password type
  */
